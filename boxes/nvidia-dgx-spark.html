@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NVIDIA DGX Spark — Local Boxes</title>
+  <meta name="description" content="What the NVIDIA DGX Spark is, who it is for, what it actually runs locally, and the honest catch.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div class="mark"><a href="../index.html">Local Boxes</a> <small>/ boxes</small></div>
+      <div class="mark" style="color:var(--muted)">Updated Aug 2026</div>
+    </header>
+    <p class="kicker">GB10 desk appliance</p>
+    <h1>NVIDIA DGX Spark</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">A 1.2 kg cube that puts 128GB of coherent memory and a full CUDA stack on a desk. Formerly Project DIGITS.</p>
+    <dl class="stats">
+      <div><dt>Street price</dt><dd>$4,699 Founders</dd></div>
+      <div><dt>Memory</dt><dd>128GB LPDDR5X unified</dd></div>
+      <div><dt>Bandwidth</dt><dd>273 GB/s</dd></div>
+      <div><dt>Power</dt><dd>~140–195W at the wall</dd></div>
+      <div><dt>Storage</dt><dd>1TB or 4TB NVMe</dd></div>
+      <div><dt>OS</dt><dd>DGX OS (Ubuntu-based)</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>NVIDIA’s smallest real AI workstation. Grace Blackwell GB10, 20 Arm cores, Blackwell GPU with 6,144 CUDA cores, 128GB of unified LPDDR5X, ConnectX-7 networking, Wi-Fi 7. Ships with the NVIDIA developer stack already on the disk. Two units can be linked.</p>
+      <h2>Who it is for</h2>
+      <p>People who already think in CUDA, want to fine-tune or serve models that do not fit in a 32GB card, and would rather pay once than rent H100 time every week.</p>
+      <h2>What it actually runs</h2>
+      <ul>
+        <li>Comfortable: 20B–70B dense and most 120B-class MoE models, depending on context and quantization.</li>
+        <li>Possible: larger models when you pair two Sparks (~256GB).</li>
+        <li>Not the win: beating a 5090 on tokens-per-second for anything that already fits in 32GB VRAM. Bandwidth is 273 GB/s.</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Paperback footprint: 150 × 150 × 50.5 mm, 1.2 kg.</li>
+        <li>Software is the product. DGX OS, CUDA, NGC.</li>
+        <li>Memory is soldered.</li>
+        <li>Founders price moved from $3,999 at launch (Oct 2025) to $4,699 in Feb 2026 as memory got scarce.</li>
+      </ul>
+      <h2>Honest verdict</h2>
+      <p class="verdict">Buy Spark if CUDA + 128GB in a small cube is the job. Skip it if you want raw decode speed, Windows first, or a machine you can upgrade in two years. Shop GX10 as the same class with a different invoice.</p>
+    </div>
+    <p class="note" style="margin-top:28px;">Prices and stock move. Affiliate links stay off until this directory has real traffic.</p>
+    <footer class="site"><p><a href="../index.html">← All boxes</a></p></footer>
+  </div>
+</body>
+</html>
