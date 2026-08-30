@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mac mini M6 / M5 Pro — Local Boxes</title>
+  <meta name="description" content="What the 2026 Mac mini with M6 and M5 Pro is, who it is for, what it actually runs locally, and the honest catch.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="../index.html">Local Boxes</a> <small>/ boxes</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Aug 2026</div>
+      </div>
+      <nav class="site">
+        <a href="../index.html">Boxes</a>
+        <a href="../hubs/under-500.html">Under $500 / Jetson</a>
+        <a href="../compare/spark-vs-gx10.html">Spark vs GX10</a>
+      </nav>
+    </header>
+    <p class="kicker">Current shipping Mac mini</p>
+    <h1>Mac mini M6 / M5 Pro</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">Apple’s 2026 compact desktop. M6 base or M5 Pro. Same 5×5-inch box, higher floor price, still the quietest path to local models on macOS.</p>
+    <dl class="stats">
+      <div><dt>Street price</dt><dd>$899–$1,699+</dd></div>
+      <div><dt>Memory</dt><dd>16–32GB (M6); 24–64GB (M5 Pro)</dd></div>
+      <div><dt>Bandwidth</dt><dd>up to 170 GB/s (M6); 307 GB/s (M5 Pro)</dd></div>
+      <div><dt>Chip</dt><dd>M6 or M5 Pro</dd></div>
+      <div><dt>Catch</dt><dd>Soldered RAM; price jumped</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>The current Mac mini, announced 25 Aug 2026, shipping from 22 Sep. Base model is M6 (12-core CPU, 12-core GPU with Neural Accelerators, dual 16-core Neural Engine) at $899 with 16GB / 256GB. Higher tier is M5 Pro (up to 18-core CPU / 20-core GPU) from $1,699 with 24GB / 512GB. Same chassis as the M4 generation. Memory and storage still chosen at purchase and stay soldered.</p>
+      <h2>Who it is for</h2>
+      <p>People who want a silent, efficient desk box for local models under MLX / Ollama / LM Studio, already live in macOS, and do not need CUDA. Good for agents and everyday inference. Wrong if you need 128GB, repairability, or a Windows/Linux stack that assumes ROCm or CUDA.</p>
+      <h2>What it actually runs</h2>
+      <ul>
+        <li>Comfortable: 3B–9B dense on the 16GB base; 14B–27B class once you buy 24GB or 32GB. Prior M4-class machines already did this; M6 bandwidth (153–170 GB/s) and Neural Accelerators improve prompt and decode relative to M4’s 120 GB/s.</li>
+        <li>Possible: 32B–70B class on M5 Pro configs with 48–64GB, accepting that 307 GB/s is still well below Mac Studio Ultra bandwidth. Capacity is the limiter, not the chip generation.</li>
+        <li>Not the win: training, anything that wants a discrete GPU memory clock, or models that need more than 64GB. Do not invent tok/s numbers; independent M6 numbers are not yet public as of 30 Aug 2026.</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Price snapshot 30 Aug 2026: Apple list $899 (M6 16GB/256GB), $1,099 (16GB/512GB), $1,699 (M5 Pro 24GB/512GB). Amazon pre-order discounts of ~$20–$30 on a few SKUs. Education and military $100 off base.</li>
+        <li>M6 maxes at 32GB unified; M5 Pro at 64GB. No later upgrade path.</li>
+        <li>Bandwidth: M6 153 GB/s at 16GB, 170 GB/s at 24/32GB; M5 Pro 307 GB/s. Storage now up to 2× faster than M4 generation.</li>
+        <li>2.5Gb Ethernet standard (10Gb optional), Wi-Fi 7, Bluetooth 6. Ports otherwise unchanged: dual front USB-C, three rear Thunderbolt (4 on M6, 5 on M5 Pro), HDMI.</li>
+        <li>The real catch is the price climb. Base Mac mini went $599 (M4 launch) → $799 (mid-2026) → $899 (M6). You still start with 16GB and a 256GB SSD.</li>
+      </ul>
+      <h2>Honest verdict</h2>
+      <p class="verdict">Buy the M6 if you already live on macOS and want a quiet 14B–27B box under $1,500 configured. Buy M5 Pro only if you need the 48–64GB configs. Skip it if you want 128GB capacity, open hardware, or CUDA — look at Framework / EVO-X2 or Spark / GX10 instead. Independent tok/s numbers for M6 are still pending shipment.</p>
+    </div>
+    <p class="note" style="margin-top:28px;">Prices and stock move. Affiliate links stay off until this directory has real traffic.</p>
+    <footer class="site"><p><a href="../index.html">← All boxes</a></p></footer>
+  </div>
+</body>
+</html>

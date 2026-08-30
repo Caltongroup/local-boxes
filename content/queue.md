@@ -1,7 +1,6 @@
 # Queue
 
 ## Next
-- Apple Mac mini M4 / M5 / M6 — pick current shipping SKU
 - Minisforum MS-S1 MAX
 - Beelink GTR9 Pro
 - Jetson AGX Thor
@@ -10,6 +9,7 @@
 - Spark vs Framework comparison (after a midrange Strix Halo page exists)
 
 ## Published
+- Mac mini M6 / M5 Pro (2026-08-30)
 - GMKtec EVO-X2 (2026-08-30)
 - NVIDIA DGX Spark (2026-08-29)
 - Framework Desktop (2026-08-29)
