@@ -2,7 +2,11 @@
 
 Curated directory of computers that run AI at home without a cloud bill.
 
-Live source: this repo. Each listing is a static HTML page under `boxes/`.
+Live source: this repo.
+
+- Listings: `boxes/`
+- Hubs: `hubs/` (under $500 / Jetson)
+- Comparisons: `compare/` (Spark vs GX10)
 
 ## Rules
 
@@ -17,7 +21,8 @@ Live source: this repo. Each listing is a static HTML page under `boxes/`.
 1. Copy an existing file in `boxes/`.
 2. Use a slug like `vendor-product.html`.
 3. Add a card on `index.html`.
-4. Update the "Pages" count and "Next ship" line.
+4. Update counts and the Next ship line.
+5. Link it from any hub or comparison it belongs on.
 
 ## Queue
 
