@@ -1,7 +1,6 @@
 # Queue
 
 ## Next
-- GMKtec EVO-X2 / other 128GB Strix Halo mini
 - Apple Mac mini M4 / M5 / M6 — pick current shipping SKU
 - Minisforum MS-S1 MAX
 - Beelink GTR9 Pro
@@ -11,6 +10,7 @@
 - Spark vs Framework comparison (after a midrange Strix Halo page exists)
 
 ## Published
+- GMKtec EVO-X2 (2026-08-30)
 - NVIDIA DGX Spark (2026-08-29)
 - Framework Desktop (2026-08-29)
 - ASUS Ascent GX10 (2026-08-29)
