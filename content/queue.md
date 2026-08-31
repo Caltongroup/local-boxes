@@ -1,7 +1,6 @@
 # Queue
 
 ## Next
-- Minisforum MS-S1 MAX
 - Beelink GTR9 Pro
 - Jetson AGX Thor
 - HP Z2 Mini G1a
@@ -9,6 +8,7 @@
 - Spark vs Framework comparison (after a midrange Strix Halo page exists)
 
 ## Published
+- Minisforum MS-S1 MAX (2026-08-31)
 - Mac mini M6 / M5 Pro (2026-08-30)
 - GMKtec EVO-X2 (2026-08-30)
 - NVIDIA DGX Spark (2026-08-29)
