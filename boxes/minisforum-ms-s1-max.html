@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minisforum MS-S1 MAX — Local Boxes</title>
+  <meta name="description" content="What the Minisforum MS-S1 MAX is, who it is for, what it actually runs locally, and the honest catch.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="../index.html">Local Boxes</a> <small>/ boxes</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Aug 2026</div>
+      </div>
+      <nav class="site">
+        <a href="../index.html">Boxes</a>
+        <a href="../hubs/under-500.html">Under $500 / Jetson</a>
+        <a href="../compare/spark-vs-gx10.html">Spark vs GX10</a>
+      </nav>
+    </header>
+    <p class="kicker">Strix Halo with dual 10GbE and a PCIe slot</p>
+    <h1>Minisforum MS-S1 MAX</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">AMD Ryzen AI Max+ 395 in a 222 × 206 × 77 mm chassis with dual 10GbE, USB4 v2, and a full-length PCIe x16 slot (wired x4). The denser, more networked Strix Halo mini. Memory is still soldered.</p>
+    <dl class="stats">
+      <div><dt>Street price</dt><dd>$2,599–$3,799</dd></div>
+      <div><dt>Memory</dt><dd>64 or 128GB LPDDR5X</dd></div>
+      <div><dt>Bandwidth</dt><dd>~256 GB/s</dd></div>
+      <div><dt>Chip</dt><dd>Ryzen AI Max+ 395</dd></div>
+      <div><dt>Power</dt><dd>130W sustained; 320W PSU</dd></div>
+      <div><dt>Catch</dt><dd>Soldered RAM; PCIe is x4</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>Minisforum’s Ryzen AI Max+ 395 mini workstation. 16 Zen 5 cores, Radeon 8060S (40 RDNA 3.5 CUs), 64GB or 128GB of soldered LPDDR5X-8000, dual M.2, dual 10GbE, dual USB4 v2 (80 Gbps), Wi-Fi 7, and a full-length PCIe x16 mechanical slot limited to PCIe 4.0 x4. Built-in 320W PSU. Same Strix Halo silicon as the <a href="framework-desktop.html">Framework Desktop</a> and <a href="gmktec-evo-x2.html">GMKtec EVO-X2</a>, in a slightly larger box aimed at desk or 2U rack use. This page is the 128GB machine unless noted.</p>
+      <h2>Who it is for</h2>
+      <p>People who want a 24B–70B local model, dual 10GbE, and a PCIe expansion path on the same desk as a real Windows PC. Wrong if your tools assume CUDA, if you need full x16 GPU bandwidth, or if you thought the PCIe slot was a free discrete-GPU upgrade.</p>
+      <h2>What it actually runs</h2>
+      <ul>
+        <li>Comfortable: 24B–32B dense at usable speed on the iGPU.</li>
+        <li>Possible: 70B-class dense and larger MoE if you buy 128GB and accept that ~256 GB/s is the limiter. Owners report usable ~5 tok/s class on Llama 70B Q4 and higher rates on smaller models via ROCm / llama.cpp. Capacity is the win. Decode is not.</li>
+        <li>Not the win: training, CUDA-only stacks, or turning the x4 PCIe slot into a full-speed 5090 workstation. Ignore vendor “126 TOPS” and “2.2× RTX 4090” slides.</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Price snapshot 31 Aug 2026, Minisforum US store: 64GB + 2TB $2,599 (sale from ~$3,249); 128GB + 2TB $3,799 (sale from ~$4,749). Amazon and other channels have tracked in the ~$2,900–$3,700 range for 128GB configs. Stock and list prices move.</li>
+        <li>Memory is soldered LPDDR5X-8000 on a 256-bit bus (~256 GB/s). Up to 96GB can be allocated to the iGPU. Pick 128GB now or do not buy this for large models.</li>
+        <li>Dual 10GbE and dual USB4 v2 are the real differentiators versus sealed Strix Halo minis that ship 2.5GbE and older USB4.</li>
+        <li>PCIe x16 slot is mechanical full-length but electrically PCIe 4.0 x4. Useful for NICs, storage, or modest accelerators. Not a free path to a full discrete GPU.</li>
+        <li>Cooling claims 130W sustained / 160W peak with copper base, six heat pipes, dual fans. Chassis supports vertical desk or horizontal 2U rack orientation. Slide-out tray for the board.</li>
+        <li>Same chip class as Framework and EVO-X2. Buy this for the networking and the slot; buy Framework if you want to open the box later; buy EVO-X2 if you want the smaller sealed form factor.</li>
+      </ul>
+      <h2>Honest verdict</h2>
+      <p class="verdict">Buy the 128GB MS-S1 MAX if you want Strix Halo with dual 10GbE and a limited PCIe slot near current street prices. Skip the 64GB config for this job. Same bandwidth ceiling as every other Max+ 395 box. If you want repairability, get <a href="framework-desktop.html">Framework Desktop</a>. If you want CUDA, shop <a href="nvidia-dgx-spark.html">Spark</a> / <a href="asus-ascent-gx10.html">GX10</a>.</p>
+    </div>
+    <p class="note" style="margin-top:28px;">Prices and stock move. Affiliate links stay off until this directory has real traffic.</p>
+    <footer class="site"><p><a href="../index.html">← All boxes</a></p></footer>
+  </div>
+</body>
+</html>
