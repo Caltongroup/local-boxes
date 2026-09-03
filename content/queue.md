@@ -1,11 +1,11 @@
 # Queue
 
 ## Next
-- HP Z2 Mini G1a
 - Used RTX 5090 SFF workstation (as a class, not one SKU)
 - Spark vs Framework comparison (after a midrange Strix Halo page exists)
 
 ## Published
+- HP Z2 Mini G1a (2026-09-03)
 - Jetson AGX Thor (2026-09-02)
 - Beelink GTR9 Pro (2026-09-01)
 - Minisforum MS-S1 MAX (2026-08-31)
