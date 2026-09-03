@@ -112,6 +112,33 @@ nav.site a:hover, nav.site a.here { color: var(--accent); text-decoration: none;
   color: var(--muted);
   font-size: 14px;
 }
+.clip {
+  margin: 28px 0 8px;
+  max-width: 42em;
+}
+.clip .kicker { margin: 0 0 8px; }
+.clip > p:not(.kicker) {
+  margin: 0 0 10px;
+  color: var(--muted);
+}
+.clip .frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+.clip iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.clip figcaption {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
 footer.site {
   margin-top: 56px;
   border-top: 1px solid var(--line);
