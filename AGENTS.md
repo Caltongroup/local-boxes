@@ -6,6 +6,7 @@ You are helping run a directory of local AI computers.
 - Short. Concrete. No hype.
 - Never invent benchmarks. If a number is a snapshot, say so.
 - Verdicts can be negative. That is the product.
+- Prices: US dollars always lead. Never put EUR/€ (or any other currency) first. If another currency is shown, it is secondary after USD.
 
 ## Daily research job
 1. Open `content/queue.md` and take the first unpublished box.
