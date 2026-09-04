@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Used RTX 5090 SFF workstation — Local Boxes</title>
+  <meta name="description" content="What a used RTX 5090 SFF workstation is, who it is for, what it actually runs locally, and the honest catch.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="../index.html">Local Boxes</a> <small>/ boxes</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Sep 2026</div>
+      </div>
+      <nav class="site">
+        <a href="../index.html">Boxes</a>
+        <a href="../hubs/under-500.html">Under $500 / Jetson</a>
+        <a href="../compare/spark-vs-gx10.html">Spark vs GX10</a>
+      </nav>
+    </header>
+    <p class="kicker">CUDA bandwidth king in a small case</p>
+    <h1>Used RTX 5090 SFF workstation</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">A class, not a single SKU: any small-form-factor box built or bought around a used GeForce RTX 5090. 32GB GDDR7, ~1,792 GB/s, full CUDA stack. The FE is two-slot and SFF-friendly; the power and heat are not.</p>
+    <dl class="stats">
+      <div><dt>Street price</dt><dd>$2,200–$3,000 card; $3,500–$6,000+ system</dd></div>
+      <div><dt>Memory</dt><dd>32GB GDDR7</dd></div>
+      <div><dt>Bandwidth</dt><dd>~1,792 GB/s</dd></div>
+      <div><dt>Chip</dt><dd>Blackwell GB202 (RTX 5090)</dd></div>
+      <div><dt>Catch</dt><dd>32GB VRAM wall; 575W + heat; used risk</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>Any deskside SFF or mini-ITX/ATX build (or used prebuilt) centered on a used NVIDIA GeForce RTX 5090. The card itself is 32GB GDDR7 on a 512-bit bus for ~1,792 GB/s, 21,760 CUDA cores, 575W TGP, PCIe 5.0. Founders Edition is two-slot and the only 5090 that meets Nvidia’s SFF-Ready guidelines; partner cards vary in length and thickness. Pair it with a 1000W+ PSU, decent airflow case, and whatever CPU/RAM/storage fits. This is the discrete-GPU path to local inference, not unified memory.</p>
+      <h2>Who it is for</h2>
+      <p>CUDA people who want maximum tokens-per-second on models that fit in 32GB, and who will live with heat, noise, and the used market. Useful for 8B–32B dense at high speed, image/video workflows, and anything that benefits from full TensorRT / vLLM / CUDA. Wrong if you need 70B+ dense without heavy quant or offload, quiet operation, or a sealed appliance with 128GB unified memory.</p>
+      <h2>What it actually runs</h2>
+      <ul>
+        <li>Comfortable: 8B–32B dense at high token rates (often 100+ tok/s on smaller models); MoE variants that stay inside 32GB.</li>
+        <li>Possible: heavier quant 70B-class with some system RAM offload, but decode drops once layers spill over PCIe. Long context eats VRAM fast.</li>
+        <li>Not the win: models that need 40GB+ resident VRAM, silent deskside boxes, or low power. Capacity is the hard limit; bandwidth is the strength while the model fits.</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Price snapshot early Sep 2026: used 5090 cards tracked around a €2,390 median sold (roughly $2,200–$3,000 USD range depending on market and condition); new street was higher and volatile. Full SFF systems (card + host) commonly land $3,500–$6,000+ once you add case, PSU, CPU, RAM, and storage. Stock and listings move daily.</li>
+        <li>32GB is the ceiling. Dense 70B at usable quant often does not fit fully; offload kills the bandwidth advantage.</li>
+        <li>575W TGP demands a serious PSU and real airflow. True SFF is possible with the FE, but the case will still dump heat into the room.</li>
+        <li>Used market risks: no remaining warranty on many cards, potential mining or heavy-use history, scams on marketplace listings. Buy tested with return window when possible.</li>
+        <li>Opposite trade-off from <a href="nvidia-dgx-spark.html">DGX Spark</a> / <a href="asus-ascent-gx10.html">GX10</a> (128GB, lower bandwidth) and the Strix Halo minis (~256 GB/s, 128GB). The 5090 wins speed on what fits; loses on capacity.</li>
+      </ul>
+      <h2>Honest verdict</h2>
+      <p class="verdict">The used CUDA bandwidth play in a small case. Buy it if you already live in CUDA, need max tokens on 8B–32B class models, and accept 32GB as the hard wall plus heat and used-card risk. If you need 70B+ resident without drama, shop the 128GB unified boxes instead.</p>
+    </div>
+    <p class="note" style="margin-top:28px;">Prices and stock move. Affiliate links stay off until this directory has real traffic.</p>
+    <footer class="site"><p><a href="../index.html">← All boxes</a></p></footer>
+  </div>
+</body>
+</html>
