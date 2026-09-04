@@ -72,7 +72,13 @@ nav.site a:hover, nav.site a.here { color: var(--accent); text-decoration: none;
   font-family: ui-monospace, Menlo, monospace;
   font-size: 12px;
   color: var(--muted);
-  margin-bottom: 40px;
+  margin-bottom: 8px;
+}
+.price-note {
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0 0 40px;
 }
 .grid { display: grid; gap: 16px; }
 .card {
@@ -83,6 +89,20 @@ nav.site a:hover, nav.site a.here { color: var(--accent); text-decoration: none;
 }
 .card h2 { margin: 0 0 8px; font-size: 24px; letter-spacing: -0.02em; }
 .card h2 a { color: var(--ink); }
+.badge-clip {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 8px 2px;
+  vertical-align: middle;
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 2px;
+}
 .card .who { color: var(--muted); margin: 0 0 14px; }
 .stats {
   display: grid;
