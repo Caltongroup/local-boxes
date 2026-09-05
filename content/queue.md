@@ -1,9 +1,10 @@
 # Queue
 
 ## Next
-- Spark vs Framework comparison (after a midrange Strix Halo page exists)
+(empty)
 
 ## Published
+- Spark vs Framework comparison (2026-09-05)
 - Used RTX 5090 SFF workstation (2026-09-04)
 - HP Z2 Mini G1a (2026-09-03)
 - Jetson AGX Thor (2026-09-02)

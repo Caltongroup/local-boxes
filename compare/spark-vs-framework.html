@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DGX Spark vs Framework Desktop — Local Boxes</title>
+  <meta name="description" content="NVIDIA DGX Spark vs Framework Desktop: CUDA 128GB brick vs repairable Strix Halo midrange.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div class="mark"><a href="../index.html">Local Boxes</a> <small>/ compare</small></div>
+      <nav class="site">
+        <a href="../index.html">Boxes</a>
+        <a href="../hubs/under-500.html">Under $500 / Jetson</a>
+        <a href="spark-vs-gx10.html">Spark vs GX10</a>
+        <a class="here" href="spark-vs-framework.html">Spark vs Framework</a>
+      </nav>
+    </header>
+    <p class="kicker">Comparison · capacity desk boxes</p>
+    <h1>DGX Spark vs Framework Desktop</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">Two ways to put 128GB of unified memory on a desk. One is CUDA and a reference stack. The other is repairable Strix Halo and a real PC.</p>
+    <table class="compare">
+      <thead><tr><th></th><th>DGX Spark</th><th>Framework Desktop</th></tr></thead>
+      <tbody>
+        <tr><td>Street (Sep 2026)</td><td>~$4,699–$6,000+</td><td>$1,269–$3,449 (128GB toward the top)</td></tr>
+        <tr><td>Chip</td><td>GB10 Grace Blackwell</td><td>Ryzen AI Max+ 395 (Strix Halo)</td></tr>
+        <tr><td>Memory</td><td>128GB LPDDR5X unified</td><td>up to 128GB LPDDR5X unified</td></tr>
+        <tr><td>Bandwidth</td><td>273 GB/s</td><td>~256 GB/s</td></tr>
+        <tr><td>What it runs</td><td>20B–70B dense, 120B-class MoE</td><td>24B–70B class (MoE friendlier)</td></tr>
+        <tr><td>Software</td><td>DGX OS, CUDA, NGC</td><td>Windows/Linux, ROCm / Vulkan / llama.cpp</td></tr>
+        <tr><td>Catch</td><td>NVIDIA tax; bandwidth wall; soldered</td><td>DIY assembly; not CUDA; soldered RAM</td></tr>
+      </tbody>
+    </table>
+    <div class="prose">
+      <h2>Who should buy Spark</h2>
+      <p>You already live in CUDA, need the NVIDIA path for tooling that assumes it, and want a turnkey 128GB brick that can load models a 32GB card cannot. Capacity and software continuity matter more than tokens-per-dollar or repairability.</p>
+      <p><a href="../boxes/nvidia-dgx-spark.html">Full Spark page →</a></p>
+      <h2>Who should buy Framework Desktop</h2>
+      <p>You want one machine for daily work and local models, prefer open/repairable hardware, and can live with ROCm or Vulkan instead of CUDA. The midrange Strix Halo pick when you assemble it yourself and keep the parts list honest.</p>
+      <p><a href="../boxes/framework-desktop.html">Full Framework page →</a></p>
+      <p class="verdict">Not the same product. Spark is the CUDA capacity appliance. Framework is the repairable midrange PC that also runs 24B–70B. Pick the software stack you already use, then shop price and form factor inside that lane.</p>
+    </div>
+    <footer class="site"><p><a href="../index.html">← All boxes</a></p></footer>
+  </div>
+</body>
+</html>
