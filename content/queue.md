@@ -1,7 +1,13 @@
 # Queue
 
 ## Next
-(empty)
+- Bosgame M5 (Ryzen AI Max+ 395 Strix Halo)
+- Corsair AI Workstation 300
+- AMD Ryzen AI Halo (developer platform)
+- ASUS ROG NUC 16
+- Beelink SER10 MAX (Ryzen AI 9 HX 470)
+- Minisforum AI X1 Pro-470
+- Hub/compare: Strix Halo mini vs ROG NUC 16 (optional — only after enough Halo + NUC pages exist)
 
 ## Published
 - Spark vs Framework comparison (2026-09-05)
