@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bosgame M5 — Local Boxes</title>
+  <meta name="description" content="What the Bosgame M5 is, who it is for, what it actually runs locally, and the honest catch.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="../index.html">Local Boxes</a> <small>/ boxes</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Sep 2026</div>
+      </div>
+      <nav class="site">
+        <a href="../index.html">Boxes</a>
+        <a href="../hubs/under-500.html">Under $500 / Jetson</a>
+        <a href="../compare/spark-vs-gx10.html">Spark vs GX10</a>
+      </nav>
+    </header>
+    <p class="kicker">Sealed Strix Halo mini</p>
+    <h1>Bosgame M5</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">A sealed mini PC with AMD’s Ryzen AI Max+ 395, Radeon 8060S, and soldered 96GB or 128GB LPDDR5X. Same silicon class as Framework Desktop and the GMKtec EVO-X2. The US-store 128GB ticket is lower. The fans are not.</p>
+    <dl class="stats">
+      <div><dt>Street price (USD)</dt><dd>$2,999 (128GB snapshot)</dd></div>
+      <div><dt>Memory</dt><dd>96–128GB LPDDR5X-8000 soldered</dd></div>
+      <div><dt>Bandwidth</dt><dd>~256 GB/s</dd></div>
+      <div><dt>Chip</dt><dd>Ryzen AI Max+ 395</dd></div>
+      <div><dt>Power</dt><dd>~120W sustained; short burst higher</dd></div>
+      <div><dt>Catch</dt><dd>Sealed; loud; thin support</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>Bosgame’s sealed Ryzen AI Max+ 395 mini PC. 16 Zen 5 cores, Radeon 8060S (40 RDNA 3.5 CUs), soldered LPDDR5X-8000 in 96GB or 128GB, dual M.2 PCIe 4.0, Windows 11 Pro. Same Strix Halo silicon as the <a href="framework-desktop.html">Framework Desktop</a> and the <a href="gmktec-evo-x2.html">GMKtec EVO-X2</a>. This page is the 128GB machine.</p>
+      <h2>Who it is for</h2>
+      <p>People who want a 24B–70B local model and a real Windows PC already assembled, will pick 128GB, and can live with llama.cpp / ROCm / Vulkan plus a loud performance-mode fan. Wrong if your tools assume CUDA, if you want to repair the box, if you need a quiet desk, or if you buy 96GB and expect large local models.</p>
+      <h2>What it actually runs</h2>
+      <ul>
+        <li>Comfortable: 24B–32B dense at usable speed on the iGPU. Same class as EVO-X2.</li>
+        <li>Possible: 70B-class dense and large MoE on 128GB if you accept that ~256 GB/s is not Mac Studio bandwidth. Capacity is the win. Decode is not.</li>
+        <li>Not the win: training, CUDA-only stacks, or beating a 5090 on anything that already fits in 32GB VRAM. Ignore vendor token-rate slides.</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Price snapshot 7 Sep 2026, official US store bosgamepc.com: 128GB + 2TB listed at $2,999 (struck-through $3,699). 96GB + 2TB is also sold. Treat $2,999 as a snapshot, not a promise. Other sites show different or lower figures, sometimes duty-excluded — this page uses the official US store.</li>
+        <li>Memory is soldered. Pick 128GB now or do not buy this for large models. BIOS can allocate up to 96GB of 128GB to iGPU cache (vendor FAQ).</li>
+        <li>256-bit LPDDR5X-8000, ~256 GB/s theoretical. Same limiter as Framework and EVO-X2. Not a Mac Studio / discrete CUDA decode play.</li>
+        <li>Ports verified from the US store and reviews: dual USB4, HDMI + DisplayPort, one 2.5GbE LAN, Wi-Fi 7. Some marketing copy says dual LAN; the store connectivity copy lists a single 2.5Gbps LAN port. No 10GbE.</li>
+        <li>Three power modes. Sustained ~120W in performance mode, short burst higher. Reviews (Wccftech, Notebookcheck, Starry Hope) put performance-mode noise in the ~50 dB class. That fan is the catch.</li>
+        <li>Vendor FAQ discusses OCuLink port alignment. Reviews and spec sheets do not treat this as a shipping eGPU box. Do not buy it for that.</li>
+        <li>One-year warranty. Brand and support are thinner than Framework or HP. Sealed chassis.</li>
+      </ul>
+      <h2>Honest verdict</h2>
+      <p class="verdict">Buy the 128GB M5 if you want sealed Strix Halo already built and the official US-store ticket is near $2,999. Skip 96GB for this job. Performance mode is loud. If you want to repair the machine, get <a href="framework-desktop.html">Framework Desktop</a>. If you want another sealed Halo cube, see <a href="gmktec-evo-x2.html">EVO-X2</a>. If you want CUDA, shop <a href="nvidia-dgx-spark.html">Spark</a> / <a href="asus-ascent-gx10.html">GX10</a>.</p>
+    </div>
+    <p class="note" style="margin-top:28px;">Prices and stock move. Affiliate links stay off until this directory has real traffic.</p>
+    <footer class="site"><p><a href="../index.html">← All boxes</a></p></footer>
+  </div>
+</body>
+</html>
