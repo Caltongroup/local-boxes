@@ -1,7 +1,6 @@
 # Queue
 
 ## Next
-- Bosgame M5 (Ryzen AI Max+ 395 Strix Halo)
 - Corsair AI Workstation 300
 - AMD Ryzen AI Halo (developer platform)
 - ASUS ROG NUC 16
@@ -10,6 +9,7 @@
 - Hub/compare: Strix Halo mini vs ROG NUC 16 (optional — only after enough Halo + NUC pages exist)
 
 ## Published
+- Bosgame M5 (2026-09-07)
 - Spark vs Framework comparison (2026-09-05)
 - Used RTX 5090 SFF workstation (2026-09-04)
 - HP Z2 Mini G1a (2026-09-03)
