@@ -1,7 +1,6 @@
 # Queue
 
 ## Next
-- Corsair AI Workstation 300
 - AMD Ryzen AI Halo (developer platform)
 - ASUS ROG NUC 16
 - Beelink SER10 MAX (Ryzen AI 9 HX 470)
@@ -9,6 +8,7 @@
 - Hub/compare: Strix Halo mini vs ROG NUC 16 (optional — only after enough Halo + NUC pages exist)
 
 ## Published
+- Corsair AI Workstation 300 (2026-09-08)
 - Bosgame M5 (2026-09-07)
 - Spark vs Framework comparison (2026-09-05)
 - Used RTX 5090 SFF workstation (2026-09-04)

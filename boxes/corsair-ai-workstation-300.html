@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Corsair AI Workstation 300 — Local Boxes</title>
+  <meta name="description" content="What the Corsair AI Workstation 300 is, who it is for, what it actually runs locally, and the honest catch.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="../index.html">Local Boxes</a> <small>/ boxes</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Sep 2026</div>
+      </div>
+      <nav class="site">
+        <a href="../index.html">Boxes</a>
+        <a href="../hubs/under-500.html">Under $500 / Jetson</a>
+        <a href="../compare/spark-vs-gx10.html">Spark vs GX10</a>
+      </nav>
+    </header>
+    <p class="kicker">Prebuilt Strix Halo mini</p>
+    <h1>Corsair AI Workstation 300</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">AMD Ryzen AI Max+ 395 in a 4.4-liter aluminum box with dual fans, dual M.2, 2.5GbE, and up to 128GB soldered LPDDR5X. Same silicon class as Framework Desktop and the sealed minis. Prebuilt with Corsair warranty. Prices rose hard after launch.</p>
+    <dl class="stats">
+      <div><dt>Street price (USD)</dt><dd>$1,700–$4,600+</dd></div>
+      <div><dt>Memory</dt><dd>64–128GB LPDDR5X soldered</dd></div>
+      <div><dt>Bandwidth</dt><dd>~256 GB/s</dd></div>
+      <div><dt>Chip</dt><dd>Ryzen AI Max+ 395</dd></div>
+      <div><dt>Catch</dt><dd>Price hiked; not CUDA</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>Corsair’s compact Strix Halo workstation. Top config is the 16-core Ryzen AI Max+ 395 with Radeon 8060S (40 RDNA 3.5 CUs), up to 128GB of soldered LPDDR5X-8000, dual M.2 NVMe (up to 4TB), 2.5GbE, Wi-Fi 6E, dual USB4, HDMI + DisplayPort, SD card reader, and an internal ~300W Flex ATX PSU in a 4.4 L aluminum chassis. Ships with Windows 11 Home and a two-year warranty. Memory is soldered; you pick 64GB (Max 385) or 128GB (Max+ 395) at order time. This page is the 128GB machine.</p>
+      <h2>Who it is for</h2>
+      <p>People who want a 24B–70B local model already assembled under a known brand name, with dual storage slots and a real Windows PC, and who can live with ROCm / llama.cpp / Vulkan. Useful if you prefer Corsair support over no-name minis. Wrong if your tools assume CUDA, if you need the lowest street price for this silicon, or if you expect discrete-GPU token rates.</p>
+      <h2>What it actually runs</h2>
+      <ul>
+        <li>Comfortable: 24B–32B dense at usable speed on the iGPU. Same class as Framework, EVO-X2, and the other Max+ 395 boxes.</li>
+        <li>Possible: 70B-class dense and larger MoE (120B-class reported) on 128GB if you accept that ~256 GB/s is the ceiling. Capacity is the win; decode is not.</li>
+        <li>Not the win: training, CUDA-only stacks, or beating a GB10 / 5090 on workloads that already fit in discrete VRAM. Tom’s Hardware found it trailing Nvidia’s GB10 in prompt processing and longer-context generation. Ignore vendor token-rate slides.</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Price snapshot 8 Sep 2026: official Corsair US store lists the 128GB / 1TB Max+ 395 around $4,599 (down from a higher list); 64GB Max 385 around $1,699. Launch prices in 2025 were ~$1,999–$2,299 for 128GB configs. Memory and NAND costs pushed the ticket up. Treat current figures as a snapshot. B&H and other channels sometimes show the base SKU lower.</li>
+        <li>Memory is soldered LPDDR5X-8000. Up to 96GB can be allocated to the iGPU. Pick 128GB or do not buy this for large models.</li>
+        <li>Same ~256 GB/s bandwidth ceiling as every other Strix Halo mini. Not a Mac Studio or discrete CUDA decode play.</li>
+        <li>Dual M.2 slots, dual USB4, 2.5GbE, SD 4.0 reader, internal PSU. Expansion is limited to storage. Chassis opens for SSD swaps.</li>
+        <li>Two-year warranty and Corsair support network. Preloaded AI software suite (LM Studio-friendly tools). Reviews note ROCm stack immaturity and occasional stability issues under creative workloads.</li>
+        <li>Fans are competent for the form factor but not silent under sustained load. Same thermal reality as the other sealed cubes.</li>
+      </ul>
+      <h2>Honest verdict</h2>
+      <p class="verdict">The brand-name prebuilt Strix Halo mini. Buy the 128GB config only if the current street ticket still makes sense against Framework, Bosgame, EVO-X2, or HP Z2 Mini. Same bandwidth ceiling as all of them. Price hikes after launch hurt the value case. If you want CUDA capacity, shop <a href="nvidia-dgx-spark.html">Spark</a> / <a href="asus-ascent-gx10.html">GX10</a>. If you want repairability, get <a href="framework-desktop.html">Framework Desktop</a>.</p>
+    </div>
+    <p class="note" style="margin-top:28px;">Prices and stock move. Affiliate links stay off until this directory has real traffic.</p>
+    <footer class="site"><p><a href="../index.html">← All boxes</a></p></footer>
+  </div>
+</body>
+</html>
