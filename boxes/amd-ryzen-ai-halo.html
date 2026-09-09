@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AMD Ryzen AI Halo — Local Boxes</title>
+  <meta name="description" content="What the AMD Ryzen AI Halo developer platform is, who it is for, what it actually runs locally, and the honest catch.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="../index.html">Local Boxes</a> <small>/ boxes</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Sep 2026</div>
+      </div>
+      <nav class="site">
+        <a href="../index.html">Boxes</a>
+        <a href="../hubs/under-500.html">Under $500 / Jetson</a>
+        <a href="../compare/spark-vs-gx10.html">Spark vs GX10</a>
+      </nav>
+    </header>
+    <p class="kicker">Official AMD Strix Halo developer box</p>
+    <h1>AMD Ryzen AI Halo</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">AMD’s own compact developer platform around the Ryzen AI Max+ 395. 128GB LPDDR5X, full ROCm, Windows or Linux, sold only at Micro Center. Same silicon class as the sealed minis and Framework Desktop.</p>
+    <dl class="stats">
+      <div><dt>Street price (USD)</dt><dd>$3,999.99</dd></div>
+      <div><dt>Memory</dt><dd>128GB LPDDR5X soldered</dd></div>
+      <div><dt>Bandwidth</dt><dd>~256 GB/s</dd></div>
+      <div><dt>Chip</dt><dd>Ryzen AI Max+ 395</dd></div>
+      <div><dt>Catch</dt><dd>Same chip, higher ticket; Micro Center only</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>AMD’s first-party AI developer platform. Ryzen AI Max+ 395 (16 Zen 5 cores / 32 threads, Radeon 8060S with 40 RDNA 3.5 CUs, 50 TOPS XDNA 2 NPU), 128GB LPDDR5X-8000 unified memory, 2TB PCIe Gen4 SSD, 10GbE, Wi-Fi 7, HDMI 2.1b, USB-C ports, USB-C PD power, in a ~150 × 150 × 45 mm chassis under 1.2 kg. Ships with either Windows 11 Pro or a Linux image, preloaded AMD Developer Center app, ROCm stack, and playbooks for LM Studio, ComfyUI, llama.cpp, vLLM, and PyTorch. Memory is soldered. TDP up to ~120 W.</p>
+      <h2>Who it is for</h2>
+      <p>Developers who want a turnkey Strix Halo box with AMD’s Best Known Configuration, dual-OS support, and official playbooks rather than another no-name mini. Useful if you prefer buying the reference platform and living in ROCm / llama.cpp / Vulkan on Windows or Linux. Wrong if you need CUDA, if you want the lowest street price for this silicon, or if you are nowhere near a Micro Center (in-store pickup only, no shipping).</p>
+      <h2>What it actually runs</h2>
+      <ul>
+        <li>Comfortable: 24B–32B dense at usable speed on the iGPU. Same class as Framework Desktop, Corsair AI Workstation 300, EVO-X2, Bosgame M5, and the other Max+ 395 boxes.</li>
+        <li>Possible: 70B-class dense and larger MoE (up to ~200B parameter class claimed with quantization) on 128GB if you accept that ~256 GB/s is the ceiling. Capacity is the win; decode is not discrete-GPU fast.</li>
+        <li>Not the win: training, CUDA-only stacks, or beating a GB10 / 5090 on workloads that already fit in discrete VRAM. Bandwidth matches every other Strix Halo mini.</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Price snapshot 9 Sep 2026: Micro Center lists both Windows 11 Pro and Linux SKUs at $3,999.99. Exclusive to Micro Center, in-store pickup only. Treat as a fixed list price, not a street discount.</li>
+        <li>Same ~256 GB/s LPDDR5X-8000 ceiling as every other Strix Halo 128GB box. Not a Mac Studio or discrete CUDA decode play.</li>
+        <li>10GbE, Wi-Fi 7, dual-OS choice, official Developer Center with Best Known Configuration, and AMD playbooks. That is the software differentiator versus cheaper partner minis.</li>
+        <li>Form factor is paperback-sized and USB-C powered. Expansion is essentially zero beyond the fixed 2TB SSD.</li>
+        <li>Cheaper Strix Halo 128GB options (Bosgame, EVO-X2, Framework, etc.) exist under this ticket. The Halo premium buys the first-party stack and dual-OS support, not faster silicon.</li>
+      </ul>
+      <h2>Honest verdict</h2>
+      <p class="verdict">AMD’s reference Strix Halo developer box. Buy it if you want the official ROCm / playbook experience and live near a Micro Center. Same bandwidth and model class as the sealed minis and Framework Desktop; the $4k list is higher than several of those. If you want CUDA capacity, shop <a href="nvidia-dgx-spark.html">Spark</a> / <a href="asus-ascent-gx10.html">GX10</a>. If you want the same chip cheaper or repairable, look at Bosgame, EVO-X2, or <a href="framework-desktop.html">Framework Desktop</a>.</p>
+    </div>
+    <p class="note" style="margin-top:28px;">Prices and stock move. Affiliate links stay off until this directory has real traffic.</p>
+    <footer class="site"><p><a href="../index.html">← All boxes</a></p></footer>
+  </div>
+</body>
+</html>
