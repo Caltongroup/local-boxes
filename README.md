@@ -13,7 +13,7 @@ Live source: this repo.
 1. One useful page at a time. No filler.
 2. Every page has: what it is, who it is for, what it actually runs, standout details, honest verdict.
 3. Prices are snapshots. Date the page.
-4. No affiliate or sponsor outreach until the site has real traffic (thousands of visits / month).
+4. No affiliate or sponsor outreach until the site has real traffic (thousands of visits / month). Growth-phase law: `content/growth.md`.
 5. Human approves the niche and any outreach. Agents research and publish.
 
 ## Add a box

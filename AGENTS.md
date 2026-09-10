@@ -21,3 +21,8 @@ You are helping run a directory of local AI computers.
 - Mass-generate thin pages.
 - Email vendors "in the user's name".
 - Claim traffic or revenue you did not measure.
+- Growth-phase rules: `content/growth.md`.
+
+## Growth
+
+Growth-phase law lives in `content/growth.md`. It sits on top of this file and `README.md`. It does not override the daily research job or voice.

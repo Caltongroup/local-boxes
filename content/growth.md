@@ -1,77 +1,76 @@
-# Growth phase
+# Growth constitution
 
-Owner: Archer, as team lead. This brief adds a growth layer on top of
-`AGENTS.md` and `README.md` — it does not override them. Those two files
-stay the constitution for this project.
+Standing growth-phase law for Local Boxes.
+
+## Constitution stack
+
+- `AGENTS.md` and `README.md` remain the base.
+- This file is a growth layer on top.
+- It does not override `AGENTS.md` daily research rules or voice.
 
 ## Scope
 
-Own the growth phase for localboxes.org from now until it clears "real
-traffic" (thousands of visits / month) — the threshold `AGENTS.md` and
-`README.md` already set as the gate before any affiliate or sponsor
-outreach.
+Growth for https://localboxes.org from live launch until “real traffic” clears — thousands of visits per month. Same gate already in `README.md` for affiliate and sponsor outreach.
 
-## Current state (2026-09-10)
+## Live facts
 
-- Site live at localboxes.org, Cloudflare Pages, custom domain + SSL done
-- Redirect from the old boxes.thecaltongroup.com in place, verified
-- 14 box listings, 1 hub (under $500/Jetson), 3 comparisons
-- Cloudflare Web Analytics wired on every page
-- Google Search Console verified (domain property), sitemap.xml submitted
-- Local Boxes Publisher already runs the weekly research/publish cycle
+- Cloudflare Pages
+- Custom domain localboxes.org + SSL
+- `boxes.thecaltongroup.com` redirects to localboxes.org
+- Cloudflare Web Analytics on pages
+- Google Search Console verified
+- Sitemap submitted
 
-## Delegation
+## Weekly cadence
 
-- **Local Boxes Publisher** — keep the weekly publish cycle running per
-  `AGENTS.md`, and add one growth action per week from the list below.
-  Before adding a new single-box listing, check whether two already-
-  published boxes deserve a `compare/` page first — comparisons rank on
-  exact buyer-intent searches and get shared more than single listings.
-- **Research Bot** — find the growth targets: relevant "Awesome X" GitHub
-  lists (self-hosted AI, local LLM, edge AI) for one-line backlink PRs,
-  gaps in comparison coverage, and anything in Search Console / Web
-  Analytics worth flagging (crawl errors, which pages actually get search
-  impressions).
-- **Writing Bot** — drafts any public-facing copy: launch posts for
-  Reddit / Hacker News, and future comparison-page prose if Local Boxes
-  Publisher needs a draft rather than writing it directly. Everything
-  Writing Bot drafts comes back for human review before posting.
-- **Clip Bot** — on standby if a video/clip angle for localboxes comes up
-  later. Not needed for this phase.
-- **Rex** — not needed here; this phase is text/web only.
-- **Risk Guardian, Process Clock, Edge Scanner** — out of scope, stay on
-  Polymarket paper trading. Not pulled into this unless told otherwise.
+Local Boxes Publisher:
 
-## Channels, in priority order
+1. Keep the `AGENTS.md` publish cycle.
+2. Add **one** growth action per week.
+3. Before adding a new single-box listing, check whether two already-published boxes deserve a `compare/` page first. Comparisons rank on buyer-intent searches and get shared more than single listings.
 
-1. Community posts (Reddit r/LocalLLaMA / r/homelab / r/selfhosted, HN
-   Show HN). One honest launch post per platform, not repeated spam.
-   Genuine participation afterward — answering questions, taking
-   corrections — counts as growth work; reposting the same link does not.
-2. Comparison content over new single listings for the next stretch.
-3. Backlinks via relevant "Awesome X" GitHub lists. One-line PR per list,
-   no outreach beyond that.
-4. Keep the technical SEO baseline current: every new page goes in
-   `sitemap.xml`, watch Search Console's coverage report for errors.
+## Research role
 
-## Cadence
+- Awesome-list GitHub targets for one-line backlink PRs
+- Comparison coverage gaps
+- Search Console / Web Analytics flags: crawl errors, pages getting impressions
+- Never invent metrics
 
-Weekly. Report back each week: what Local Boxes Publisher shipped, what
-got posted where, and what the Web Analytics + Search Console numbers did.
+## Writing role
 
-## The traffic threshold
+- Public-facing drafts (Reddit, HN) for human review before posting
+- Comparison prose drafts if asked
 
-Track weekly visits and search impressions/clicks. Flag it explicitly the
-moment the trailing 4-week average visits crosses into four digits a
-month — that is the signal to revisit the affiliate/sponsor gate. That
-decision is human, not the team's to make unilaterally.
+## Clip Bot
 
-## Hard rules, no exceptions without sign-off
+Standby for video/clip angles later. Not required for the early growth phase.
 
-- No affiliate or sponsor links or outreach.
-- No emailing vendors in the human's name.
-- No paid traffic or ads.
-- No claiming traffic or revenue that wasn't actually measured.
-- No mass-generating thin pages to chase volume.
-- Community posts (Reddit/HN) are one-and-done per platform unless
-  there's a genuine update worth a second post — not a bump.
+## Out of scope
+
+- Rex
+- Polymarket bots (Edge / Risk / Clock)
+
+## Weekly report
+
+To the human:
+
+- What shipped
+- What was posted where (only if actually posted)
+- Web Analytics + Search Console numbers
+
+## Traffic threshold
+
+Track weekly visits and search impressions/clicks.
+
+Flag explicitly when the trailing ~4-week average crosses into four digits per month. That signal reopens the affiliate/sponsor gate for **human decision only**. Agents never open that gate alone.
+
+## Hard rules
+
+No exceptions without human say-so:
+
+- No affiliate or sponsor links or outreach
+- No emailing vendors in the user’s name
+- No paid traffic or ads
+- No claiming traffic or revenue not measured
+- No mass-generating thin pages
+- Community posts (Reddit / HN) are one-and-done per platform unless a genuine update warrants a second post — not a bump
