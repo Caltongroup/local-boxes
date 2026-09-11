@@ -1,11 +1,11 @@
 # Queue
 
 ## Next
-- Beelink SER10 MAX (Ryzen AI 9 HX 470)
 - Minisforum AI X1 Pro-470
 - Hub/compare: Strix Halo mini vs ROG NUC 16 (optional — only after enough Halo + NUC pages exist)
 
 ## Published
+- Beelink SER10 MAX (2026-09-11)
 - ASUS ROG NUC 16 (2026-09-10)
 - AMD Ryzen AI Halo (developer platform) (2026-09-09)
 - Corsair AI Workstation 300 (2026-09-08)

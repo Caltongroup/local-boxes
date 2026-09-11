@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beelink SER10 MAX — Local Boxes</title>
+  <meta name="description" content="What the Beelink SER10 MAX is, who it is for, what it actually runs locally, and the honest catch.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="../index.html">Local Boxes</a> <small>/ boxes</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Sep 2026</div>
+      </div>
+      <nav class="site">
+        <a href="../index.html">Boxes</a>
+        <a href="../hubs/under-500.html">Under $500 / Jetson</a>
+        <a href="../compare/spark-vs-gx10.html">Spark vs GX10</a>
+      </nav>
+    </header>
+    <p class="kicker">Upgradeable Gorgon Point mini with 10GbE</p>
+    <h1>Beelink SER10 MAX</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">AMD Ryzen AI 9 HX 470 in a 0.81 L aluminum cube. Dual SODIMM DDR5-5600, dual M.2, 10GbE, USB4. Same chip class as other HX 470 minis. Not Strix Halo.</p>
+    <dl class="stats">
+      <div><dt>Street price (USD)</dt><dd>$1,250–$1,700</dd></div>
+      <div><dt>Memory</dt><dd>32–64GB DDR5-5600 SODIMM</dd></div>
+      <div><dt>Bandwidth</dt><dd>~90 GB/s</dd></div>
+      <div><dt>Chip</dt><dd>Ryzen AI 9 HX 470</dd></div>
+      <div><dt>Catch</dt><dd>Not Halo bandwidth; 64GB practical max</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>Beelink’s SER10 MAX. Ryzen AI 9 HX 470 (Gorgon Point: 4 Zen 5 + 8 Zen 5c, 12C/24T, up to 5.2 GHz), Radeon 890M (16 RDNA 3.5 CUs, up to 3.1 GHz), XDNA 2 NPU (55 TOPS, ~86 total). Dual-channel DDR5-5600 SODIMM (shipping configs 32 GB or 64 GB), dual M.2 PCIe 4.0, 10GbE, USB4, HDMI + DisplayPort, Wi-Fi 6, MSC 2.0 vapor-chamber cooling. Compact 135 × 135 × 45 mm aluminum chassis. Ships with Windows 11 Pro. Three-year warranty on official channels.</p>
+      <h2>Who it is for</h2>
+      <p>People who want a quiet, upgradeable mini with 10GbE for local 7B–14B models, light agents, or a home lab, and who will pick the 64 GB config. Wrong if you need Strix Halo capacity (24B–70B class at usable speed), CUDA, or the highest memory bandwidth. The dual SODIMMs are the point if you plan to add RAM later; the bandwidth ceiling is not.</p>
+      <h2>What it actually runs</h2>
+      <ul>
+        <li>Comfortable: 7B–14B dense quantized at usable speed on CPU or Vulkan iGPU. Smaller MoE and agent workloads fit easily.</li>
+        <li>Possible: 20B–35B class quantized on 64 GB system RAM if you accept that ~90 GB/s is the wall. Decode stays memory-bound. Reports on the same chip show mid-teens to high-20s tok/s on 20–35B class depending on quant and backend.</li>
+        <li>Not the win: dense 70B at practical speed, training, or matching a Strix Halo / DGX Spark box on capacity. Ignore “86 TOPS” and vendor LLM marketing slides. The NPU is still mainly a Windows Copilot / limited-path feature for local GGUF stacks.</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Price snapshot early–mid Sep 2026: official bee-link.com lists 32 GB + 1 TB around $1,250–$1,350 and 64 GB + 1 TB around $1,650–$1,700 (pre-order / strike-through variance). Amazon listings tracked in the same band, occasionally lower on 64 GB + 2 TB. China list was lower at launch. Treat as a snapshot.</li>
+        <li>Memory is dual SODIMM DDR5-5600. Theoretical dual-channel bandwidth is ~89–90 GB/s. That is roughly one-third of the LPDDR5X-8000 bus on Strix Halo minis. Shipping SKUs stop at 64 GB; some marketing mentions higher theoretical support, but 64 GB is the practical ceiling for this chassis today.</li>
+        <li>10GbE is the real networking differentiator versus older SER9 boxes that shipped 2.5GbE. Dual M.2 and user-replaceable RAM are the other practical upsides versus sealed LPDDR5X cubes.</li>
+        <li>Same silicon class as other HX 470 minis (e.g. Minisforum AI X1 Pro-470). Incremental clock and GPU gains over the prior HX 370; not a generational leap in local LLM bandwidth.</li>
+        <li>Cooling is quiet in vendor claims (~32 dB). Real sustained loads still move air; the form factor is small.</li>
+      </ul>
+      <h2>Honest verdict</h2>
+      <p class="verdict">A solid, upgradeable Gorgon Point mini with 10GbE for people who want 7B–14B local models or a compact lab box and will buy 64 GB. It is not a Strix Halo machine. Bandwidth is the limiter. If you need 24B–70B capacity at desk-friendly speed, look at the Max+ 395 cubes (Framework, EVO-X2, Bosgame, GTR9 Pro, MS-S1 MAX) or a CUDA brick. If you just need a quiet, networked mini that you can open later, this is fine.</p>
+    </div>
+    <p class="note" style="margin-top:28px;">Prices and stock move. Affiliate links stay off until this directory has real traffic.</p>
+    <footer class="site"><p><a href="../index.html">← All boxes</a></p></footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f01515428ba48fc8ddf98b3ab3e5bcc"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
