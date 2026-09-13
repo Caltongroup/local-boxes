@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://localboxes.org/</loc></url>
+  <url><loc>https://localboxes.org/about.html</loc></url>
+  <url><loc>https://localboxes.org/contact.html</loc></url>
+  <url><loc>https://localboxes.org/boxes/minisforum-ai-x1-pro-470.html</loc></url>
+  <url><loc>https://localboxes.org/boxes/beelink-ser10-max.html</loc></url>
+  <url><loc>https://localboxes.org/boxes/asus-rog-nuc-16.html</loc></url>
   <url><loc>https://localboxes.org/boxes/jetson-orin-nano-super.html</loc></url>
   <url><loc>https://localboxes.org/boxes/jetson-agx-thor.html</loc></url>
   <url><loc>https://localboxes.org/boxes/gmktec-evo-x2.html</loc></url>
