@@ -237,7 +237,19 @@ footer.site {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-.shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.shot-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+.shot-frame:has(img) {
+  aspect-ratio: auto;
+  border-style: solid;
+  background: var(--paper);
+  padding: 0;
+}
+.shot img { width: 100%; height: auto; display: block; }
 .shot figcaption { margin: 8px 0 0; color: var(--muted); font-size: 13px; }
 .card {
   display: grid;
@@ -259,6 +271,21 @@ footer.site {
   text-transform: uppercase;
   text-align: center;
   padding: 8px;
+}
+.card-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.card-media:has(img) {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  border-style: solid;
+  background: var(--paper);
 }
 .card-body { min-width: 0; }
 .card.featured { border-color: var(--accent); }

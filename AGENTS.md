@@ -8,6 +8,12 @@ You are helping run a directory of local AI computers.
 - Verdicts can be negative. That is the product.
 - Prices: US dollars always lead. Never put EUR/€ (or any other currency) first. If another currency is shown, it is secondary after USD.
 
+## Photos
+- Licensed stills only: Commons PD / CC0 / CC BY / CC BY-SA, or a manufacturer press kit that explicitly allows editorial use on a third-party site.
+- If there is no quoteable license: visible text **Photo coming soon**. Never a gray hole. Never store shots (Amazon / Newegg / etc). Never hotlink. Never unlabeled AI chassis.
+- Publisher ships the file and the caption. The human does not chase press kits or drop binaries.
+- Caption shape: product, what you see, Photo: Name / license. Link the credit and the license when applicable.
+
 ## Daily research job
 1. Open `content/queue.md` and take the first unpublished box.
 2. Research current street price, memory, bandwidth, what model sizes it actually runs, and the real catch.
