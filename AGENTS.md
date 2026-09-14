@@ -13,6 +13,7 @@ You are helping run a directory of local AI computers.
 - If there is no quoteable license: visible text **Photo coming soon**. Never a gray hole. Never store shots (Amazon / Newegg / etc). Never hotlink. Never unlabeled AI chassis.
 - Publisher ships the file and the caption. The human does not chase press kits or drop binaries.
 - Caption shape: product, what you see, Photo: Name / license. Link the credit and the license when applicable.
+- Weekly chain: Research hunts Wednesdays → Risk Guardian authenticity → Publisher posts ONLY Risk-APPROVE’d stills. Publisher does not hunt or invent licenses. Host in-repo; caption/credit/license; merge to main. BLOCKED/missing = Photo coming soon.
 
 ## Daily research job
 1. Open `content/queue.md` and take the first unpublished box.
