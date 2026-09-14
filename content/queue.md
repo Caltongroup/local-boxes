@@ -1,13 +1,14 @@
 # Queue
 
 ## Next
-- 1. Compare: AMD Ryzen AI Halo vs ASUS ROG NUC 16 — 128GB unified 70B cube vs 3L laptop-RTX CUDA (16GB VRAM wall / gaming tax). Both listings already published. Write this before another single.
+- 1. Jetson AGX Orin 64GB (Developer Kit) — the workhorse between Nano Super and Thor. Official NVIDIA kit, 64GB. Do not confuse with Orin Nano, Orin NX, or Thor. Source: https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/ — Catch: 64GB is the ceiling vs Thor’s 128GB; JetPack/physical-AI first, not a 70B desk cube.
 - 2. GMKtec EVO-X3 — sealed Strix Halo (AI Max+ 395 / 128GB), OCuLink vs EVO-X2. Source: https://www.gmktec.com/products/gmktec-evo-x3-ai-mini-pc-amd-ryzen-ai-max-395 — Catch: same 395 silicon, higher ticket, RAM soldered.
 - 3. Minisforum N5 MAX AI NAS — Strix Halo 5-bay NAS, dual 10GbE. Source: https://store.minisforum.com/products/minisforum-n5-max-ai-nas — Catch: not a desk Windows cube; soldered RAM; confirm 64 vs 128GB stock.
 - 4. Dell Pro Max with GB10 — one Spark-class partner this refill (official US cart). Source: https://www.dell.com/en-us/shop/desktop-computers/dell-pro-max-with-gb10/spd/dell-pro-max-fcm1253-micro/xcto_fcm1253_usx — Catch: same GB10 as Spark; buy for Dell channel/support, not new silicon.
 - 5. Mac Studio (M5 Max / M5 Ultra) — Apple deskside above Mac mini. Apple says availability 2026-09-22; 512GB SKU later. Source: https://www.apple.com/mac-studio/ — Catch: not CUDA; do not assume 128GB; do not publish as shipping before it is.
 
 ## Published
+- Compare: AMD Ryzen AI Halo vs ASUS ROG NUC 16 (2026-09-14)
 - Minisforum AI X1 Pro-470 (2026-09-12)
 - Beelink SER10 MAX (2026-09-11)
 - ASUS ROG NUC 16 (2026-09-10)

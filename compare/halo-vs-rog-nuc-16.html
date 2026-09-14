@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AMD Ryzen AI Halo vs ASUS ROG NUC 16 — Local Boxes</title>
+  <meta name="description" content="AMD Ryzen AI Halo vs ASUS ROG NUC 16: 128GB unified 70B cube vs 3L laptop-RTX CUDA mini. Not the same job.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div class="mark"><a href="../index.html">Local Boxes</a> <small>/ compare</small></div>
+      <nav class="site">
+        <a href="../index.html">Boxes</a>
+        <a href="../hubs/index.html">Hubs</a>
+        <a class="here" href="../compare/index.html">Compare</a>
+        <a href="../about.html">About</a>
+      </nav>
+    </header>
+    <p class="kicker">Comparison · capacity vs CUDA mini</p>
+    <h1>AMD Ryzen AI Halo vs ASUS ROG NUC 16</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">Not the same job. Halo is a 128GB unified Strix Halo cube for ~70B capacity on ROCm / llama.cpp / Vulkan — not CUDA. ROG NUC 16 is a 3L laptop-RTX CUDA mini: fast while the model fits in 16GB VRAM, then the wall. You also pay a gaming tax.</p>
+    <div class="compare-wrap">
+    <table class="compare">
+      <thead><tr><th></th><th>Halo</th><th>ROG NUC 16</th></tr></thead>
+      <tbody>
+        <tr><td>Street USD (Sep 2026)</td><td>$3,999.99 (Micro Center list; in-store pickup only)</td><td>$2,499–$3,799+</td></tr>
+        <tr><td>Chip</td><td>Ryzen AI Max+ 395</td><td>Core Ultra 9 290HX+ / RTX 50 Laptop (up to 5080)</td></tr>
+        <tr><td>Memory</td><td>128GB LPDDR5X soldered</td><td>16GB GDDR7 + up to 128GB DDR5 system</td></tr>
+        <tr><td>Bandwidth</td><td>~256 GB/s</td><td>~900 GB/s class (GPU)</td></tr>
+        <tr><td>What it runs</td><td>24B–70B class (comfortable 24B–32B; 70B possible with capacity ceiling)</td><td>8B–14B class comfortable; not 70B capacity</td></tr>
+        <tr><td>Software stack</td><td>ROCm / llama.cpp / Vulkan (not CUDA)</td><td>CUDA, Windows, laptop RTX</td></tr>
+        <tr><td>Catch</td><td>Same chip as cheaper Halo minis, higher ticket; Micro Center only</td><td>16GB VRAM wall; gaming tax</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="prose">
+      <h2>Who should buy Halo</h2>
+      <p>You want 128GB unified capacity for 24B–70B locally, you can live without CUDA, and you will pay Micro Center list for AMD’s official Strix Halo developer box. Wrong if you need NVIDIA tooling, the cheapest Max+ 395, or a store that ships.</p>
+      <p><a href="../boxes/amd-ryzen-ai-halo.html">Full Halo page →</a></p>
+      <h2>Who should buy ROG NUC 16</h2>
+      <p>You want a compact CUDA gaming mini that also runs 8B–14B well, and you already live in the NVIDIA stack. Wrong if 70B capacity is the job.</p>
+      <p><a href="../boxes/asus-rog-nuc-16.html">Full ROG NUC 16 page →</a></p>
+      <p class="verdict">They are not the same job. Halo is capacity and unified memory. ROG NUC 16 is CUDA speed while it fits in 16GB. Pick the wall you can live with.</p>
+    </div>
+        <footer class="site">
+      <p>Curated directory, not a review mill. Prices move with memory markets. Affiliate outreach stays off until traffic is real. Published by Calton Group, LLC.</p>
+      <p><a href="../about.html">About</a> · <a href="../contact.html">Contact</a> · <a href="../privacy.html">Privacy</a> · <a href="../disclaimer.html">Disclaimer</a></p>
+    </footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f01515428ba48fc8ddf98b3ab3e5bcc"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
