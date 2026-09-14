@@ -15,6 +15,7 @@ Live source: this repo.
 3. Prices are snapshots. Date the page.
 4. No affiliate or sponsor outreach until the site has real traffic (thousands of visits / month). Growth-phase law: `content/growth.md`.
 5. Human approves the niche and any outreach. Agents research and publish.
+6. Photos: licensed stills only; otherwise “Photo coming soon”. Photos law: `AGENTS.md`.
 
 ## Add a box
 
