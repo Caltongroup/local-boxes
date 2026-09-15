@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jetson AGX Orin 64GB — Local Boxes</title>
+  <meta name="description" content="NVIDIA Jetson AGX Orin Developer Kit (64GB): street price snapshot, 204.8 GB/s, what it actually runs, and the catch. Not Nano, not NX, not Thor.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="/">Local Boxes</a> <small>/ boxes</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Sep 2026</div>
+      </div>
+      <nav class="site">
+        <a class="here" href="/">Boxes</a>
+        <a href="/hubs/">Hubs</a>
+        <a href="/compare/">Compare</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+    <p class="kicker">AGX Orin · 64GB workhorse</p>
+    <h1>Jetson AGX Orin 64GB</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">Official NVIDIA Jetson AGX Orin Developer Kit, 64GB memory SKU. Ampere, JetPack, cameras. The mid Jetson between Orin Nano Super and AGX Thor — not a 70B desk cube.</p>
+    <figure class="shot">
+      <div class="shot-frame">
+        <img src="../images/jetson-agx-orin-64-calton.jpg" alt="NVIDIA Jetson AGX Orin Developer Kit on a desk, cables connected." width="1600" height="1333" loading="lazy">
+      </div>
+      <figcaption>Jetson AGX Orin Developer Kit, whole chassis on a desk. Photo: Darrell Calton.</figcaption>
+    </figure>
+    <dl class="stats">
+      <div><dt>Street price (USD)</dt><dd>~$1,999–$3,499</dd></div>
+      <div><dt>Memory</dt><dd>64GB LPDDR5</dd></div>
+      <div><dt>Bandwidth</dt><dd>204.8 GB/s</dd></div>
+      <div><dt>AI claim</dt><dd>275 TOPS INT8 sparse (NVIDIA)</dd></div>
+      <div><dt>Power</dt><dd>15W–60W</dd></div>
+      <div><dt>Stack</dt><dd>JetPack / CUDA / Isaac / ROS</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>The official NVIDIA Jetson AGX Orin Developer Kit with the 64GB module — not Orin Nano, not Orin NX, not AGX Thor. 2048-core Ampere GPU with 64 Tensor Cores, 12-core Arm Cortex-A78AE, 64GB 256-bit LPDDR5 at 204.8 GB/s, 64GB eMMC 5.1 plus NVMe via M.2. About a 110 × 110 × 72 mm cube with carrier and thermal. Power 15W–60W. The kit emulates Orin modules and runs the JetPack / CUDA / Isaac / ROS stack.</p>
+      <h2>Who it is for</h2>
+      <p>Robotics and edge people who already live in JetPack and need more than the Nano Super’s 8GB without stepping up to Thor’s 128GB. This is the workhorse a lot of local-AI camera and robot work actually sits on. Wrong if you want a Windows mini PC, a silent desk cube, or 128GB class capacity for 70B weights.</p>
+      <h2>What it actually runs</h2>
+      <ul>
+        <li>Comfortable: mid-size LLMs and VLMs that fit in 64GB with headroom for JetPack and cameras. Order of magnitude: well above Nano’s 8GB; below 128GB Thor / Spark capacity. We did not bench token rates.</li>
+        <li>Possible: larger dense models at hard quantization if KV cache and OS still fit. Capacity is 64GB. Bandwidth is about 205 GB/s.</li>
+        <li>The real job: robotics, vision, Isaac / ROS, generative AI at the edge under JetPack. Language models are secondary to physical AI.</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Price snapshot Sep 2026: about $1,999–$3,499 USD. NVIDIA Marketplace and partner carts often list around $1,999; NVIDIA’s Developer FAQ lists AGX Orin Developer Kit MSRP at $3,499. Snapshot only. Prices move.</li>
+        <li>64GB is the ceiling versus Thor and Spark at 128GB. Bandwidth 204.8 GB/s.</li>
+        <li>Up to 275 TOPS is an NVIDIA INT8 sparse claim, not a Local Boxes bench.</li>
+        <li>Arm + Jetson software world. Not a drop-in Windows mini PC.</li>
+        <li>Cheaper door: <a href="jetson-orin-nano-super.html">Orin Nano Super</a>. Step up for 128GB: <a href="jetson-agx-thor.html">AGX Thor</a> or <a href="nvidia-dgx-spark.html">DGX Spark</a>.</li>
+      </ul>
+      <h2>Honest verdict</h2>
+      <p class="verdict">The 64GB Jetson workhorse. Buy it for JetPack, cameras, and robotics with real unified memory. Do not buy it as a 70B desk cube. Nano Super is the cheap door. Thor or Spark if you need 128GB.</p>
+    </div>
+    <p class="note" style="margin-top:28px;">Not listed on the <a href="../hubs/under-500.html">under $500 / Jetson hub</a> — this kit is not under $500. Not on the <a href="../hubs/70b-desk.html">128GB / 70B hub</a> either; 64GB is not that job.</p>
+    <aside class="buyfrom">
+      <p class="kicker">People buy this from</p>
+      <p><a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/" rel="noopener">NVIDIA</a>. Normal link. No tracking. Not a quote, not our cart.</p>
+      <p>Affiliate outreach stays off until traffic is real.</p>
+    </aside>
+        <footer class="site">
+      <p>Curated directory, not a review mill. Prices move with memory markets. Affiliate outreach stays off until traffic is real. Published by Calton Group, LLC.</p>
+      <p><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a> · <a href="/disclaimer">Disclaimer</a></p>
+    </footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f01515428ba48fc8ddf98b3ab3e5bcc"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
