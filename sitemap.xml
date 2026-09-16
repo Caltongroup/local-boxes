@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://localboxes.org/</loc></url>
-  <url><loc>https://localboxes.org/about.html</loc></url>
-  <url><loc>https://localboxes.org/contact.html</loc></url>
-  <url><loc>https://localboxes.org/privacy.html</loc></url>
-  <url><loc>https://localboxes.org/disclaimer.html</loc></url>
+  <url><loc>https://localboxes.org/about</loc></url>
+  <url><loc>https://localboxes.org/contact</loc></url>
+  <url><loc>https://localboxes.org/privacy</loc></url>
+  <url><loc>https://localboxes.org/disclaimer</loc></url>
   <url><loc>https://localboxes.org/hubs/</loc></url>
-  <url><loc>https://localboxes.org/hubs/under-500.html</loc></url>
-  <url><loc>https://localboxes.org/hubs/70b-desk.html</loc></url>
+  <url><loc>https://localboxes.org/hubs/under-500</loc></url>
+  <url><loc>https://localboxes.org/hubs/70b-desk</loc></url>
   <url><loc>https://localboxes.org/compare/</loc></url>
-  <url><loc>https://localboxes.org/compare/spark-vs-gx10.html</loc></url>
-  <url><loc>https://localboxes.org/compare/spark-vs-framework.html</loc></url>
-  <url><loc>https://localboxes.org/compare/framework-vs-evo-x2.html</loc></url>
-  <url><loc>https://localboxes.org/compare/halo-vs-rog-nuc-16.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/amd-ryzen-ai-halo.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/asus-ascent-gx10.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/asus-rog-nuc-16.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/beelink-gtr9-pro.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/beelink-ser10-max.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/bosgame-m5.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/corsair-ai-workstation-300.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/framework-desktop.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/gmktec-evo-x2.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/hp-z2-mini-g1a.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/jetson-agx-orin-64.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/jetson-agx-thor.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/jetson-orin-nano-super.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/mac-mini-m6.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/minisforum-ai-x1-pro-470.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/minisforum-ms-s1-max.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/nvidia-dgx-spark.html</loc></url>
-  <url><loc>https://localboxes.org/boxes/used-rtx-5090-sff-workstation.html</loc></url>
+  <url><loc>https://localboxes.org/compare/spark-vs-gx10</loc></url>
+  <url><loc>https://localboxes.org/compare/spark-vs-framework</loc></url>
+  <url><loc>https://localboxes.org/compare/framework-vs-evo-x2</loc></url>
+  <url><loc>https://localboxes.org/compare/halo-vs-rog-nuc-16</loc></url>
+  <url><loc>https://localboxes.org/boxes/amd-ryzen-ai-halo</loc></url>
+  <url><loc>https://localboxes.org/boxes/asus-ascent-gx10</loc></url>
+  <url><loc>https://localboxes.org/boxes/asus-rog-nuc-16</loc></url>
+  <url><loc>https://localboxes.org/boxes/beelink-gtr9-pro</loc></url>
+  <url><loc>https://localboxes.org/boxes/beelink-ser10-max</loc></url>
+  <url><loc>https://localboxes.org/boxes/bosgame-m5</loc></url>
+  <url><loc>https://localboxes.org/boxes/corsair-ai-workstation-300</loc></url>
+  <url><loc>https://localboxes.org/boxes/framework-desktop</loc></url>
+  <url><loc>https://localboxes.org/boxes/gmktec-evo-x2</loc></url>
+  <url><loc>https://localboxes.org/boxes/hp-z2-mini-g1a</loc></url>
+  <url><loc>https://localboxes.org/boxes/jetson-agx-orin-64</loc></url>
+  <url><loc>https://localboxes.org/boxes/jetson-agx-thor</loc></url>
+  <url><loc>https://localboxes.org/boxes/jetson-orin-nano-super</loc></url>
+  <url><loc>https://localboxes.org/boxes/mac-mini-m6</loc></url>
+  <url><loc>https://localboxes.org/boxes/minisforum-ai-x1-pro-470</loc></url>
+  <url><loc>https://localboxes.org/boxes/minisforum-ms-s1-max</loc></url>
+  <url><loc>https://localboxes.org/boxes/nvidia-dgx-spark</loc></url>
+  <url><loc>https://localboxes.org/boxes/used-rtx-5090-sff-workstation</loc></url>
 </urlset>
