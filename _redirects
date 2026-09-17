@@ -1,0 +1,6 @@
+# Soft-home aliases that currently serve the homepage without a redirect.
+# Keep /boxes/* listing paths working; only the bare section roots redirect.
+/directory    /    301
+/directory/   /    301
+/boxes        /    301
+/boxes/       /    301

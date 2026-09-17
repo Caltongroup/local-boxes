@@ -6,13 +6,13 @@
   <url><loc>https://localboxes.org/privacy</loc></url>
   <url><loc>https://localboxes.org/disclaimer</loc></url>
   <url><loc>https://localboxes.org/hubs/</loc></url>
-  <url><loc>https://localboxes.org/hubs/under-500</loc></url>
   <url><loc>https://localboxes.org/hubs/70b-desk</loc></url>
+  <url><loc>https://localboxes.org/hubs/under-500</loc></url>
   <url><loc>https://localboxes.org/compare/</loc></url>
-  <url><loc>https://localboxes.org/compare/spark-vs-gx10</loc></url>
-  <url><loc>https://localboxes.org/compare/spark-vs-framework</loc></url>
   <url><loc>https://localboxes.org/compare/framework-vs-evo-x2</loc></url>
   <url><loc>https://localboxes.org/compare/halo-vs-rog-nuc-16</loc></url>
+  <url><loc>https://localboxes.org/compare/spark-vs-framework</loc></url>
+  <url><loc>https://localboxes.org/compare/spark-vs-gx10</loc></url>
   <url><loc>https://localboxes.org/boxes/amd-ryzen-ai-halo</loc></url>
   <url><loc>https://localboxes.org/boxes/asus-ascent-gx10</loc></url>
   <url><loc>https://localboxes.org/boxes/asus-rog-nuc-16</loc></url>
@@ -22,6 +22,7 @@
   <url><loc>https://localboxes.org/boxes/corsair-ai-workstation-300</loc></url>
   <url><loc>https://localboxes.org/boxes/framework-desktop</loc></url>
   <url><loc>https://localboxes.org/boxes/gmktec-evo-x2</loc></url>
+  <url><loc>https://localboxes.org/boxes/gmktec-evo-x3</loc></url>
   <url><loc>https://localboxes.org/boxes/hp-z2-mini-g1a</loc></url>
   <url><loc>https://localboxes.org/boxes/jetson-agx-orin-64</loc></url>
   <url><loc>https://localboxes.org/boxes/jetson-agx-thor</loc></url>
@@ -29,6 +30,7 @@
   <url><loc>https://localboxes.org/boxes/mac-mini-m6</loc></url>
   <url><loc>https://localboxes.org/boxes/minisforum-ai-x1-pro-470</loc></url>
   <url><loc>https://localboxes.org/boxes/minisforum-ms-s1-max</loc></url>
+  <url><loc>https://localboxes.org/boxes/minisforum-n5-max</loc></url>
   <url><loc>https://localboxes.org/boxes/nvidia-dgx-spark</loc></url>
   <url><loc>https://localboxes.org/boxes/used-rtx-5090-sff-workstation</loc></url>
 </urlset>
