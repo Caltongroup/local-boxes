@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minisforum N5 MAX AI NAS — Local Boxes</title>
+  <meta name="description" content="What the Minisforum N5 MAX AI NAS is, who it is for, what it actually runs locally, and the honest catch.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="/">Local Boxes</a> <small>/ boxes</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Sep 2026</div>
+      </div>
+      <nav class="site">
+        <a class="here" href="/">Boxes</a>
+        <a href="/hubs/">Hubs</a>
+        <a href="/compare/">Compare</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+    <p class="kicker">Strix Halo 5-bay NAS with dual 10GbE</p>
+    <h1>Minisforum N5 MAX AI NAS</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">AMD Ryzen AI Max+ 395 in a 5-bay NAS chassis with dual 10GbE, five SATA + five M.2, and up to 128GB soldered LPDDR5X. Not a desk cube. Storage-first form factor with the same Halo silicon.</p>
+    <figure class="shot">
+      <div class="shot-frame"><span>Photo coming soon</span></div>
+      <figcaption>Photo coming soon. Licensed stills only; we do not hotlink store photos.</figcaption>
+    </figure>
+    <dl class="stats">
+      <div><dt>Street price (USD)</dt><dd>$2,399–$3,599</dd></div>
+      <div><dt>Memory</dt><dd>64 or 128GB LPDDR5X</dd></div>
+      <div><dt>Bandwidth</dt><dd>~256 GB/s</dd></div>
+      <div><dt>Chip</dt><dd>Ryzen AI Max+ 395</dd></div>
+      <div><dt>Catch</dt><dd>NAS form factor; soldered RAM</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>Minisforum’s flagship AI NAS: Ryzen AI Max+ 395 (16 Zen 5 cores, Radeon 8060S), 64GB or 128GB of soldered LPDDR5X on a 256-bit bus, five 3.5/2.5-inch SATA bays, five M.2 NVMe slots (one occupied by the 128GB system SSD), dual 10GbE, dual USB4 v2 (80 Gbps), HDMI 2.1, and a built-in 250W PSU. Runs MinisCloud OS (with Windows 11 Pro / Linux options). Dimensions roughly 199 × 202 × 252 mm, about 5.8 kg. Same Strix Halo silicon as the <a href="minisforum-ms-s1-max.html">MS-S1 MAX</a> and the sealed cubes, packaged as a networked storage appliance instead of a desk mini.</p>
+      <h2>Who it is for</h2>
+      <p>People who want a 24B–70B (or larger MoE on 128GB) local model living next to a serious storage array and dual 10GbE. Home labs, small teams, or anyone who already thinks in NAS form factors. Wrong if you want a quiet Windows desk cube you can shove under a monitor, or if your tools assume CUDA only.</p>
+      <h2>What it actually runs</h2>
+      <ul>
+        <li>Comfortable: 24B–32B dense at usable speed on the iGPU via llama.cpp / ROCm / Vulkan.</li>
+        <li>Possible: 70B-class dense and larger MoE when you buy the 128GB config and accept that ~256 GB/s is the limiter. Capacity is the win; decode is not Mac Studio or discrete-VRAM class.</li>
+        <li>Not the win: training, CUDA-only stacks, or treating the five HDD bays as free headroom for models that still have to fit in the soldered unified memory.</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Price snapshot Sep 2026, Minisforum US store: 64GB + 128GB OS SSD ~$2,399 (sale from ~$2,999); 128GB configs have tracked around $3,599 (sale from higher list). Confirm the exact SKU before checkout—store bullets and dropdowns have mixed the two.</li>
+        <li>Memory is soldered LPDDR5X (default ~8000 MT/s, up to 8533 MT/s OC) on a 256-bit bus. ~256 GB/s. No upgrade path. Pick 128GB now if large models are the point.</li>
+        <li>Five SATA + five M.2 (one used by system SSD) for hybrid capacity up to the claimed ~200TB class. Dual 10GbE (RTL8127) and dual USB4 v2 are the networking differentiators.</li>
+        <li>MinisCloud OS is the primary path, with Docker one-click and a local AI agent story. Windows 11 Pro and Linux are supported if you want a conventional stack.</li>
+        <li>Same chip class as Framework Desktop, MS-S1 MAX, EVO-X2/X3, and the sealed cubes. Buy this for the bays and dual 10GbE in one chassis; buy MS-S1 MAX if you want a more desk-oriented Halo with a limited PCIe slot instead of five HDD trays.</li>
+      </ul>
+      <h2>Honest verdict</h2>
+      <p class="verdict">Buy the 128GB N5 MAX if you actually need a 5-bay NAS that also runs 24B–70B-class models locally and dual 10GbE is non-negotiable. Skip the 64GB config for capacity work. Same ~256 GB/s ceiling as every other Max+ 395 box. This is not a desk Windows cube—form factor and OS expectations differ. If you want repairable Halo, get <a href="framework-desktop.html">Framework Desktop</a>. If you want CUDA capacity, look at <a href="nvidia-dgx-spark.html">Spark</a> / <a href="asus-ascent-gx10.html">GX10</a>.</p>
+    </div>
+    <p class="note" style="margin-top:28px;">Prices and stock move. Affiliate links stay off until this directory has real traffic.</p>
+    <aside class="buyfrom">
+      <p class="kicker">People buy this from</p>
+      <p><a href="https://store.minisforum.com/products/minisforum-n5-max-ai-nas" rel="noopener">Minisforum</a>. Normal link. No tracking. Not a quote, not our cart.</p>
+      <p>Affiliate outreach stays off until traffic is real.</p>
+    </aside>
+        <footer class="site">
+      <p>Curated directory, not a review mill. Prices move with memory markets. Affiliate outreach stays off until traffic is real. Published by Calton Group, LLC.</p>
+      <p><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a> · <a href="/disclaimer">Disclaimer</a></p>
+    </footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f01515428ba48fc8ddf98b3ab3e5bcc"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
