@@ -1,10 +1,10 @@
 # Queue
 
 ## Next
-- 1. Dell Pro Max with GB10 — one Spark-class partner this refill (official US cart). Source: https://www.dell.com/en-us/shop/desktop-computers/dell-pro-max-with-gb10/spd/dell-pro-max-fcm1253-micro/xcto_fcm1253_usx — Catch: same GB10 as Spark; buy for Dell channel/support, not new silicon.
-- 2. Mac Studio (M5 Max / M5 Ultra) — Apple deskside above Mac mini. Apple says availability 2026-09-22; 512GB SKU later. Source: https://www.apple.com/mac-studio/ — Catch: not CUDA; do not assume 128GB; do not publish as shipping before it is.
+- 1. Mac Studio (M5 Max / M5 Ultra) — Apple deskside above Mac mini. Apple says availability 2026-09-22; 512GB SKU later. Source: https://www.apple.com/mac-studio/ — Catch: not CUDA; do not assume 128GB; do not publish as shipping before it is.
 
 ## Published
+- Dell Pro Max with GB10 (2026-09-18)
 - Minisforum N5 MAX AI NAS (2026-09-17)
 - GMKtec EVO-X3 (2026-09-16)
 - Jetson AGX Orin 64GB (Developer Kit) (2026-09-15)
