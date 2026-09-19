@@ -1,9 +1,9 @@
 # Queue
 
 ## Next
-- 1. Mac Studio (M5 Max / M5 Ultra) — Apple deskside above Mac mini. Apple says availability 2026-09-22; 512GB SKU later. Source: https://www.apple.com/mac-studio/ — Catch: not CUDA; do not assume 128GB; do not publish as shipping before it is.
 
 ## Published
+- Mac Studio (M5 Max / M5 Ultra) (2026-09-19)
 - Dell Pro Max with GB10 (2026-09-18)
 - Minisforum N5 MAX AI NAS (2026-09-17)
 - GMKtec EVO-X3 (2026-09-16)
