@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HP ZGX Nano G1n — Local Boxes</title>
+  <meta name="description" content="What the HP ZGX Nano G1n is, who it is for, what it actually runs locally, and the honest catch.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="/">Local Boxes</a> <small>/ boxes</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Sep 2026</div>
+      </div>
+      <nav class="site">
+        <a class="here" href="/">Boxes</a>
+        <a href="/hubs/">Hubs</a>
+        <a href="/compare/">Compare</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+    <p class="kicker">GB10 desk appliance · HP Z channel</p>
+    <h1>HP ZGX Nano G1n</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">NVIDIA Grace Blackwell GB10 in HP’s ZGX Nano: 128GB unified LPDDR5X, DGX OS, ConnectX dual 200GbE class networking, and HP Z Toolkit / channel support. Same silicon class as the DGX Spark and Lenovo ThinkStation PGX; different invoice.</p>
+    <figure class="shot">
+      <div class="shot-frame"><span>Photo coming soon</span></div>
+      <figcaption>Photo coming soon. Licensed stills only; we do not hotlink store photos.</figcaption>
+    </figure>
+    <dl class="stats">
+      <div><dt>Street price (USD)</dt><dd>~$6,030–$7,400</dd></div>
+      <div><dt>Memory</dt><dd>128GB LPDDR5X unified</dd></div>
+      <div><dt>Bandwidth</dt><dd>273 GB/s class</dd></div>
+      <div><dt>Chip</dt><dd>NVIDIA GB10 (Grace + Blackwell)</dd></div>
+      <div><dt>Catch</dt><dd>Same GB10 as Spark; HP Z ticket</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>HP’s ZGX Nano G1n is a deskside GB10 appliance in the same Grace Blackwell class as the NVIDIA DGX Spark: Arm + Blackwell on one package, 128GB coherent LPDDR5X at roughly 273 GB/s, M.2 storage options, 10GbE plus dual 200GbE-class ConnectX networking, and NVIDIA DGX OS. Form factor is nano SFF. You buy it through HP’s Z / workstation channel and Z Toolkit ecosystem rather than NVIDIA Founders or another partner badge.</p>
+      <h2>Who it is for</h2>
+      <p>CUDA people who already live in HP Z procurement, want enterprise channel paperwork, or need HP support on a 128GB unified GB10 desk box. Wrong if you only want the cheapest GB10 SKU or a Windows-first mini.</p>
+      <h2>What it actually runs</h2>
+      <ul>
+        <li>Comfortable: 20B–70B dense and most 120B-class MoE models, same capacity story as other GB10 cubes.</li>
+        <li>Possible: larger models when two units are paired over the high-speed fabric (~256GB coherent class). Quantized 200B-class depends on context.</li>
+        <li>Not the win: beating a discrete high-bandwidth card on tokens-per-second for models that already fit in VRAM. Capacity is the product; 273 GB/s is the ceiling.</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Price snapshot Sep 2026: street listings for configured units commonly land around ~$6,030–$7,400 depending on storage (4TB configs skew higher). Confirm the exact HP SKU and support options before checkout—channel quotes move.</li>
+        <li>Same GB10 silicon and bandwidth class as the NVIDIA DGX Spark, Dell Pro Max with GB10, ASUS Ascent GX10, and Lenovo ThinkStation PGX. Buy HP for Z channel and toolkit, not new silicon.</li>
+        <li>Memory is soldered. Storage is M.2 class. Networking matches the GB10 partner pattern: 10GbE plus dual 200GbE-class ConnectX ports for clustering.</li>
+        <li>DGX OS and the NVIDIA developer stack are the path. Windows is not.</li>
+      </ul>
+      <h2>Honest verdict</h2>
+      <p class="verdict">Buy the HP ZGX Nano G1n if HP Z channel, Z Toolkit, or an HP support number matters and you need the GB10 128GB capacity tier. Skip it if a cheaper complete Spark / GX10 / Dell / Lenovo config is available and you do not need the HP invoice. Same silicon, same bandwidth limiter. Side-by-side: <a href="../compare/hp-zgx-nano-g1n-vs-lenovo-thinkstation-pgx.html">vs Lenovo ThinkStation PGX</a> · <a href="nvidia-dgx-spark.html">DGX Spark</a> · <a href="dell-pro-max-gb10.html">Dell Pro Max with GB10</a>.</p>
+    </div>
+    <p class="note" style="margin-top:28px;">Prices and stock move. Affiliate links stay off until this directory has real traffic.</p>
+    <aside class="buyfrom">
+      <p class="kicker">People buy this from</p>
+      <p><a href="https://www.hp.com/us-en/workstations.html" rel="noopener">HP</a> (Z / workstation channel). Normal link. No tracking. Not a quote, not our cart.</p>
+      <p>Affiliate outreach stays off until traffic is real.</p>
+    </aside>
+        <footer class="site">
+      <p>Curated directory, not a review mill. Prices move with memory markets. Affiliate outreach stays off until traffic is real. Published by Calton Group, LLC.</p>
+      <p><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a> · <a href="/disclaimer">Disclaimer</a></p>
+    </footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f01515428ba48fc8ddf98b3ab3e5bcc"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
