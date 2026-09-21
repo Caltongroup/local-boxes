@@ -1,8 +1,15 @@
 # Queue
 
 ## Next
+- Acer Veriton GN100 (`acer-veriton-gn100`)
+- GIGABYTE AI TOP ATOM (`gigabyte-ai-top-atom`)
+- MSI EdgeXpert MS-C931 (`msi-edgexpert-ms-c931`)
+- ACEMAGIC M1A Pro+ (`acemagic-m1a-pro-plus`)
 
 ## Published
+- Compare: HP ZGX Nano G1n vs Lenovo ThinkStation PGX (2026-09-21)
+- Lenovo ThinkStation PGX (2026-09-21)
+- HP ZGX Nano G1n (2026-09-21)
 - Mac Studio (M5 Max / M5 Ultra) (2026-09-19)
 - Dell Pro Max with GB10 (2026-09-18)
 - Minisforum N5 MAX AI NAS (2026-09-17)
