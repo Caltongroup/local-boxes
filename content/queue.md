@@ -1,11 +1,11 @@
 # Queue
 
 ## Next
-- GIGABYTE AI TOP ATOM (`gigabyte-ai-top-atom`)
 - MSI EdgeXpert MS-C931 (`msi-edgexpert-ms-c931`)
 - ACEMAGIC M1A Pro+ (`acemagic-m1a-pro-plus`)
 
 ## Published
+- GIGABYTE AI TOP ATOM (2026-09-24)
 - Acer Veriton GN100 (2026-09-22)
 - Compare: HP ZGX Nano G1n vs Lenovo ThinkStation PGX (2026-09-21)
 - Lenovo ThinkStation PGX (2026-09-21)
