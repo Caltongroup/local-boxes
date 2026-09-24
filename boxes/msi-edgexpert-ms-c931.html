@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MSI EdgeXpert MS-C931 — Local Boxes</title>
+  <meta name="description" content="What the MSI EdgeXpert MS-C931 is, who it is for, what it actually runs locally, and the honest catch.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="/">Local Boxes</a> <small>/ boxes</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Sep 2026</div>
+      </div>
+      <nav class="site">
+        <a class="here" href="/">Boxes</a>
+        <a href="/hubs/">Hubs</a>
+        <a href="/compare/">Compare</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+    <p class="kicker">GB10 desk appliance · MSI channel</p>
+    <h1>MSI EdgeXpert MS-C931</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">NVIDIA Grace Blackwell GB10 in a 151 × 151 × 52 mm cube with 128GB unified LPDDR5X, DGX OS, and MSI industrial packaging. Same silicon as the DGX Spark; different invoice and warranty.</p>
+    <figure class="shot">
+      <div class="shot-frame"><span>Photo coming soon</span></div>
+      <figcaption>Photo coming soon. Licensed stills only; we do not hotlink store photos.</figcaption>
+    </figure>
+    <dl class="stats">
+      <div><dt>Street price (USD)</dt><dd>~$2,999–$4,200</dd></div>
+      <div><dt>Memory</dt><dd>128GB LPDDR5X unified</dd></div>
+      <div><dt>Bandwidth</dt><dd>273 GB/s</dd></div>
+      <div><dt>Chip</dt><dd>NVIDIA GB10 (Grace + Blackwell)</dd></div>
+      <div><dt>Catch</dt><dd>Same GB10 as Spark; MSI channel</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>MSI’s partner take on the GB10 Superchip: 20 Arm cores (10× Cortex-X925 + 10× Cortex-A725), Blackwell GPU, 128GB coherent LPDDR5X at 273 GB/s, 1 or 4 TB self-encrypting M.2, ConnectX-7 SmartNIC, 10GbE, Wi-Fi 7, HDMI 2.1a, USB-C, and a ~240W adapter. Ships with NVIDIA DGX OS and the CUDA/NGC stack. Footprint matches the Spark family: 151 × 151 × 52 mm, ~1.2 kg. Two units can be linked over ConnectX-7 for roughly double the memory pool and models up to ~405B parameters.</p>
+      <h2>Who it is for</h2>
+      <p>CUDA people who already buy through MSI or need the industrial channel and warranty, and want 128GB unified memory on a desk without chasing the NVIDIA Founders Edition or another partner SKU. Wrong if you just want the cheapest GB10 cube or a Windows-first box.</p>
+      <h2>What it actually runs</h2>
+      <ul>
+        <li>Comfortable: 20B–70B dense and most 120B-class MoE models, same capacity story as Spark.</li>
+        <li>Possible: larger models when two units are paired (~256GB coherent). Quantized 200B-class fits on one unit depending on context.</li>
+        <li>Not the win: beating a discrete 32GB card on tokens-per-second for anything that already fits in VRAM. Bandwidth is 273 GB/s; capacity is the product.</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Price snapshot Sep 2026: NVIDIA marketplace and Amazon 4TB configs around $3,999–$4,200; earlier 1TB SKUs listed from ~$2,999. Europe ~€5,999+; other markets vary. Confirm storage SKU before checkout—prices move.</li>
+        <li>Same GB10 silicon and 273 GB/s ceiling as the NVIDIA DGX Spark, GIGABYTE AI TOP ATOM, Acer Veriton GN100, Dell Pro Max, HP ZGX Nano, and Lenovo ThinkStation PGX. Buy this for MSI channel or warranty, not new silicon.</li>
+        <li>Memory is soldered. Storage is a single M.2 (1–4 TB options, self-encrypting). No upgrade path beyond a second box.</li>
+        <li>DGX OS and the NVIDIA developer stack ship ready. Windows is not the path.</li>
+      </ul>
+      <h2>Honest verdict</h2>
+      <p class="verdict">Buy the MSI EdgeXpert MS-C931 if MSI support or the industrial SKU matters and you need the GB10 128GB capacity tier. Skip it if a cheaper Spark or GX10 SKU is available and you do not need the MSI invoice. Same silicon, same bandwidth limiter. Side-by-side class: <a href="nvidia-dgx-spark.html">Spark</a> / <a href="asus-ascent-gx10.html">GX10</a> / <a href="gigabyte-ai-top-atom.html">GIGABYTE AI TOP ATOM</a>.</p>
+    </div>
+    <p class="note" style="margin-top:28px;">Prices and stock move. Affiliate links stay off until this directory has real traffic.</p>
+    <aside class="buyfrom">
+      <p class="kicker">People buy this from</p>
+      <p><a href="https://ipc.msi.com/product_detail/EdgeXpert-MS-C931" rel="noopener">MSI</a> / <a href="https://marketplace.nvidia.com/en-us/enterprise/personal-ai-supercomputers/msi-edgexpert/" rel="noopener">NVIDIA Marketplace</a>. Normal links. No tracking. Not a quote, not our cart.</p>
+      <p>Affiliate outreach stays off until traffic is real.</p>
+    </aside>
+        <footer class="site">
+      <p>Curated directory, not a review mill. Prices move with memory markets. Affiliate outreach stays off until traffic is real. Published by Calton Group, LLC.</p>
+      <p><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a> · <a href="/disclaimer">Disclaimer</a></p>
+    </footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f01515428ba48fc8ddf98b3ab3e5bcc"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
