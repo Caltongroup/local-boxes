@@ -1,9 +1,9 @@
 # Queue
 
 ## Next
-- ACEMAGIC M1A Pro+ (`acemagic-m1a-pro-plus`)
 
 ## Published
+- ACEMAGIC M1A Pro+ (2026-09-25)
 - MSI EdgeXpert MS-C931 (2026-09-24)
 - GIGABYTE AI TOP ATOM (2026-09-24)
 - Acer Veriton GN100 (2026-09-22)
