@@ -1,6 +1,17 @@
 # Queue
 
 ## Next
+- 1. GMKtec EVO-X5 Pro (`gmktec-evo-x5-pro`) — Pre-order. Early-bird $6,599 (192GB / 2TB) / $6,899 (192GB / 4TB). No ship date yet. Source: https://www.gmktec.com/products/gmktec-evo-x5-pro-amd-ryzen-ai-max-pro-495-ai-mini-pc
+- 2. ACEMAGIC F9A (`acemagic-f9a`) — Pre-order. $6,499 (list $6,999), 192GB / 2TB. Ships late October. Source: https://acemagic.com/products/f9a-495-ai-workstation
+- 3. Compare: GMKtec EVO-X5 Pro vs ACEMAGIC F9A (`gmktec-evo-x5-pro-vs-acemagic-f9a`) — Ship only after both singles are live.
+- 4. GMKtec EVO-T2 (`gmktec-evo-t2`) — Shipping. $2,399.99; $2,599.99 with AI SSD. The site's first Intel box. Source: https://www.gmktec.com/products/intel-core-ultra-x7-358h-x9-388h-evo-t2-ai-mini-pc
+- 5. Tenstorrent TT-QuietBox 2 (`tenstorrent-tt-quietbox-2`) — $9,999. Ships in 2 weeks. Source: https://tenstorrent.com/en/hardware/tt-quietbox
+- 6. Seeed reComputer Super J4012 (`seeed-recomputer-super-j4012`) — Store shows $1,449; other fields read $1,486.99–$1,502.99. PRICE MUST BE CONFIRMED AT SHIP TIME. Source: https://www.seeedstudio.com/reComputer-Super-J4012-p-6443.html
+- 7. Compare: NVIDIA DGX Spark vs GMKtec EVO-X5 Pro (`nvidia-dgx-spark-vs-gmktec-evo-x5-pro`) — Ship after `gmktec-evo-x5-pro` is live.
+
+## Updates (not new pages)
+- Minisforum MS-S1 MAX (`minisforum-ms-s1-max`) — add the 192GB P495 variant: $7,399 US, 192GB / 2TB, pre-order, ships mid-October. Source: https://store.minisforum.com/products/minisforum-ms-s1-max-p495-ai-workstation
+- Minisforum N5 MAX AI NAS (`minisforum-n5-max`) — add the P495 variant once it has a price and store page.
 
 ## Published
 - ACEMAGIC M1A Pro+ (2026-09-25)
