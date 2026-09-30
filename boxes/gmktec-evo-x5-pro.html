@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GMKtec EVO-X5 Pro — Local Boxes</title>
+  <meta name="description" content="What the GMKtec EVO-X5 Pro is, who it is for, what it actually runs locally, and the honest catch.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="/">Local Boxes</a> <small>/ boxes</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Sep 2026</div>
+      </div>
+      <nav class="site">
+        <a class="here" href="/">Boxes</a>
+        <a href="/hubs/">Hubs</a>
+        <a href="/compare/">Compare</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+    <p class="kicker">192GB Gorgon Halo mini</p>
+    <h1>GMKtec EVO-X5 Pro</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">Ryzen AI Max+ PRO 495 with 192GB soldered LPDDR5X-8533. The 128GB ceiling moves. Bandwidth barely does.</p>
+    <figure class="shot">
+      <div class="shot-frame"><span>Photo coming soon</span></div>
+      <figcaption>Photo coming soon. Licensed stills only; we do not hotlink store photos.</figcaption>
+    </figure>
+    <dl class="stats">
+      <div><dt>Street price (USD)</dt><dd>$6,599–$6,899 early bird</dd></div>
+      <div><dt>Memory</dt><dd>192GB LPDDR5X-8533</dd></div>
+      <div><dt>Bandwidth</dt><dd>~273 GB/s</dd></div>
+      <div><dt>Chip</dt><dd>Ryzen AI Max+ PRO 495</dd></div>
+      <div><dt>Power</dt><dd>45–120W chip; 330W brick</dd></div>
+      <div><dt>Catch</dt><dd>Capacity jump, not speed; soldered; not CUDA</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>GMKtec’s first Gorgon Halo mini. 16 Zen 5 cores, Radeon 8065S (40 RDNA 3.5 CUs), 192GB onboard LPDDR5X-8533 with up to 160GB allocatable as graphics memory, three M.2 2280, Windows 11 Pro, dual 10GbE, USB4 V2. Chassis is roughly 80 × 195 × 221 mm, about 2.5 kg, vapor chamber plus three fans, 330W Lite-On brick. Same 495 silicon class as other 192GB Halo cubes. Not the <a href="gmktec-evo-x2.html">EVO-X2</a> / <a href="gmktec-evo-x3.html">EVO-X3</a> Max+ 395 machine.</p>
+      <h2>Who it is for</h2>
+      <p>People who already decided 128GB is the wall and will pay roughly double an X2 to get 192GB in a sealed GMKtec box with dual 10GbE and DASH. Wrong if you need CUDA, if you want to open the machine later, or if you thought “320B locally” meant a usable dense 320B at speed.</p>
+      <h2>What it actually runs</h2>
+      <ul>
+        <li>Comfortable: 24B–70B dense on the iGPU, same job as the 128GB Halo cubes, with more room for context and concurrent agents.</li>
+        <li>Possible: larger dense and MoE working sets that simply do not fit in 128GB. Vendor copy says up to 320B-class offline; that is a quantized capacity claim, not a token-rate claim. ~273 GB/s is still the limiter.</li>
+        <li>Not the win: training, CUDA-only stacks, or beating a discrete 32GB card on models that already fit. Ignore 320B slides.</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Price snapshot 30 Sep 2026, GMKtec US store: 192GB + 2TB $6,599 early bird (listed regular $6,799); 192GB + 4TB $6,899 early bird (listed regular $7,099). Super-early $6,399 / $6,699 first-30 is gone. Store notes first 100 sold; later US orders listed to ship 9 Oct.</li>
+        <li>Memory is soldered 192GB only. No 128GB SKU on this page. No upgrade path.</li>
+        <li>256-bit LPDDR5X-8533, ~273 GB/s theoretical. That is about 6.6% over the Max+ 395’s ~256 GB/s. Capacity is the product. Decode is not.</li>
+        <li>Dual 10GbE with AMD DASH, dTPM 2.0, fingerprint reader, 2× USB4 V2 (80 Gbps) + 2× USB4. Triple M.2 2280 (vendor max 24TB; one slot is the short straw on lanes).</li>
+        <li>Same one-year warranty as the rest of the line. 24/7 copy is marketing, not a measured duty cycle here.</li>
+      </ul>
+      <h2>Honest verdict</h2>
+      <p class="verdict">Buy the EVO-X5 Pro if you specifically want 192GB in a GMKtec chassis and the ~$6,600–$6,900 ticket is acceptable. You are paying for capacity over the <a href="gmktec-evo-x2.html">EVO-X2</a>, not a new architecture. Bandwidth is still Halo-class. If you want CUDA, shop <a href="nvidia-dgx-spark.html">Spark</a> / <a href="asus-ascent-gx10.html">GX10</a>. The next 495 cube in the queue is ACEMAGIC F9A.</p>
+    </div>
+    <p class="note" style="margin-top:28px;">Prices and stock move. Affiliate links stay off until this directory has real traffic.</p>
+    <aside class="buyfrom">
+      <p class="kicker">People buy this from</p>
+      <p><a href="https://www.gmktec.com/" rel="noopener">GMKtec</a>. Normal link. No tracking. Not a quote, not our cart.</p>
+      <p>Affiliate outreach stays off until traffic is real.</p>
+    </aside>
+        <footer class="site">
+      <p>Curated directory, not a review mill. Prices move with memory markets. Affiliate outreach stays off until traffic is real. Published by Calton Group, LLC.</p>
+      <p><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a> · <a href="/disclaimer">Disclaimer</a></p>
+    </footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f01515428ba48fc8ddf98b3ab3e5bcc"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
