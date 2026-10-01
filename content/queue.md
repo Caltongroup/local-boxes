@@ -1,7 +1,9 @@
 # Queue
 
+**HOLD (2026-10-01, Homer):** No item in this queue ships until Homer lifts this hold. Only Local Boxes Publisher (LBP) ships, and only through a pull request. Nothing pushes to main.
+
 ## Next
-- 1. Compare: GMKtec EVO-X5 Pro vs ACEMAGIC F9A (`gmktec-evo-x5-pro-vs-acemagic-f9a`) — Ship only after both singles are live.
+- 1. HELD — Compare: GMKtec EVO-X5 Pro vs ACEMAGIC F9A (`gmktec-evo-x5-pro-vs-acemagic-f9a`) — Ship only after both singles are live.
 - 2. GMKtec EVO-T2 (`gmktec-evo-t2`) — Shipping. $2,399.99; $2,599.99 with AI SSD. The site's first Intel box. Source: https://www.gmktec.com/products/intel-core-ultra-x7-358h-x9-388h-evo-t2-ai-mini-pc
 - 3. Tenstorrent TT-QuietBox 2 (`tenstorrent-tt-quietbox-2`) — $9,999. Ships in 2 weeks. Source: https://tenstorrent.com/en/hardware/tt-quietbox
 - 4. Seeed reComputer Super J4012 (`seeed-recomputer-super-j4012`) — Store shows $1,449; other fields read $1,486.99–$1,502.99. PRICE MUST BE CONFIRMED AT SHIP TIME. Source: https://www.seeedstudio.com/reComputer-Super-J4012-p-6443.html
