@@ -14,16 +14,17 @@ Live source: this repo.
 2. Every page has: what it is, who it is for, what it actually runs, standout details, honest verdict.
 3. Prices are snapshots. Date the page.
 4. No affiliate or sponsor outreach until the site has real traffic (thousands of visits / month). Growth-phase law: `content/growth.md`.
-5. Human approves the niche and any outreach. Agents research and publish.
+5. Human approves the niche and any outreach. Agents research. Only Local Boxes Publisher (LBP) publishes, and only through pull requests.
 6. Photos: licensed stills only; otherwise “Photo coming soon”. Photos law: `AGENTS.md`.
 
 ## Add a box
 
-1. Copy an existing file in `boxes/`.
+1. LBP only, on a branch. Copy an existing file in `boxes/`.
 2. Use a slug like `vendor-product.html`.
-3. Add a card on `index.html`.
+3. Edit a card into `index.html` in place. Never replace the file or write PLACEHOLDER content.
 4. Update counts and the Next ship line.
 5. Link it from any hub or comparison it belongs on.
+6. Open a PR. Never push to `main`.
 
 ## Queue
 
