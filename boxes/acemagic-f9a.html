@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ACEMAGIC F9A — Local Boxes</title>
+  <meta name="description" content="What the ACEMAGIC F9A is, who it is for, what it actually runs locally, and the honest catch.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="/">Local Boxes</a> <small>/ boxes</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Oct 2026</div>
+      </div>
+      <nav class="site">
+        <a class="here" href="/">Boxes</a>
+        <a href="/hubs/">Hubs</a>
+        <a href="/compare/">Compare</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+    <p class="kicker">192GB Gorgon Halo mini</p>
+    <h1>ACEMAGIC F9A</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">Ryzen AI Max+ PRO 495, 192GB soldered LPDDR5X-8533, OCuLink, dual 2.5GbE. Pre-order. Same capacity class as the <a href="gmktec-evo-x5-pro.html">EVO-X5 Pro</a>, not a faster bus.</p>
+    <figure class="shot">
+      <div class="shot-frame"><span>Photo coming soon</span></div>
+      <figcaption>Photo coming soon. Licensed stills only; we do not hotlink store photos.</figcaption>
+    </figure>
+    <dl class="stats">
+      <div><dt>Street price (USD)</dt><dd>$6,499 pre-order</dd></div>
+      <div><dt>Memory</dt><dd>192GB LPDDR5X-8533</dd></div>
+      <div><dt>Bandwidth</dt><dd>~273 GB/s theoretical</dd></div>
+      <div><dt>Chip</dt><dd>Ryzen AI Max+ PRO 495</dd></div>
+      <div><dt>Power</dt><dd>120W TDP; ~230W brick</dd></div>
+      <div><dt>Catch</dt><dd>Late Oct; 2.5GbE; soldered; not CUDA</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>ACEMAGIC’s 2L Gorgon Halo cube. 16 Zen 5 cores (up to 5.2 GHz), Radeon 8065S (40 RDNA 3.5 CUs), XDNA 2 NPU at 55 TOPS, 192GB onboard LPDDR5X-8533 with up to 160GB allocatable as graphics memory, two M.2 2280 (2TB preinstalled, vendor max 8TB), Windows 11 Pro, dual 2.5GbE, USB4 at 40 Gbps, OCuLink (PCIe 4.0 x4). Chassis is 158.5 × 158.5 × 81.5 mm, about 1.4 kg, aluminum plus ABS/PC. Same 495 silicon class as the <a href="gmktec-evo-x5-pro.html">EVO-X5 Pro</a>. Not the <a href="acemagic-m1a-pro-plus.html">M1A Pro+</a> Max+ 395 machine.</p>
+      <h2>Who it is for</h2>
+      <p>People who already decided 128GB is the wall, want OCuLink on the back, and will pre-order a sealed ACEMAGIC box. Wrong if you need CUDA, 10GbE, a machine that ships this week, or an upgrade path for the RAM.</p>
+      <h2>What it actually runs</h2>
+      <ul>
+        <li>Comfortable: 24B–70B dense on the iGPU, same job as the 128GB Halo cubes, with more room for context and concurrent agents.</li>
+        <li>Possible: larger dense and MoE working sets that do not fit in 128GB. Vendor copy points at DeepSeek V4 Flash 284B and “up to 300B MoE.” That is a quantized capacity claim, not a token-rate claim. No independent F9A token numbers were published as of this snapshot.</li>
+        <li>Not the win: training, CUDA-only stacks, or beating a discrete 32GB card on models that already fit. Ignore the 131 TOPS slide.</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Price snapshot 1 Oct 2026, ACEMAGIC US store: one SKU, 192GB + 2TB, $6,499 pre-order against a $6,999 list. Estimated shipping late October. First-come fulfillment. No second storage tier on the page.</li>
+        <li>Memory is soldered 192GB. Spec block says non-upgradable. A marketing block on the same page still says “up to 128GB.” Trust the spec block and the cart, not that sentence.</li>
+        <li>256-bit LPDDR5X-8533 is ~273 GB/s theoretical (8533 MT/s × 32 bytes). The store graphics line prints “up to 256GB/s.” Either way it is a small step over Max+ 395’s ~256 GB/s class. Capacity is the product. Decode is not.</li>
+        <li>Dual 2.5GbE, not 10GbE. USB4 is 40 Gbps, not USB4 v2. OCuLink is the real expansion port. Power adapter is listed as 19.5V / 11.8A (~230W); the same spec page says 120W TDP and “up to 120W system performance,” and also “up to 176W performance.” Those numbers do not agree.</li>
+        <li>Two-year warranty on the official store. 30-day return is store policy, not a measured duty cycle.</li>
+      </ul>
+      <h2>Honest verdict</h2>
+      <p class="verdict">Buy the F9A only if you want this 192GB ACEMAGIC chassis, OCuLink, and the $6,499 pre-order is acceptable. You are paying for capacity, not a new bus. The <a href="gmktec-evo-x5-pro.html">EVO-X5 Pro</a> is the same 495 class with dual 10GbE and was already taking orders. If you want CUDA, shop <a href="nvidia-dgx-spark.html">Spark</a> / <a href="asus-ascent-gx10.html">GX10</a>. A side-by-side with the X5 Pro is the next page in the queue.</p>
+    </div>
+    <p class="note" style="margin-top:28px;">Prices and stock move. Affiliate links stay off until this directory has real traffic.</p>
+    <aside class="buyfrom">
+      <p class="kicker">People buy this from</p>
+      <p><a href="https://acemagic.com/" rel="noopener">ACEMAGIC</a>. Normal link. No tracking. Not a quote, not our cart.</p>
+      <p>Affiliate outreach stays off until traffic is real.</p>
+    </aside>
+        <footer class="site">
+      <p>Curated directory, not a review mill. Prices move with memory markets. Affiliate outreach stays off until traffic is real. Published by Calton Group, LLC.</p>
+      <p><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a> · <a href="/disclaimer">Disclaimer</a></p>
+    </footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f01515428ba48fc8ddf98b3ab3e5bcc"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
