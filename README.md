@@ -15,7 +15,7 @@ Live source: this repo.
 3. Prices are snapshots. Date the page.
 4. No affiliate or sponsor outreach until the site has real traffic (thousands of visits / month). Growth-phase law: `content/growth.md`.
 5. Human approves the niche and any outreach. Agents research. Only Local Boxes Publisher (LBP) publishes, and only through pull requests.
-6. Photos: licensed stills only; otherwise “Photo coming soon”. Photos law: `AGENTS.md`.
+6. Photos: Risk-approved licensed stills only (older-model stills allowed with a previous-generation caption); otherwise no photo slot and no placeholder. Photos law: `AGENTS.md`.
 
 ## Add a box
 

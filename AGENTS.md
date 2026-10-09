@@ -10,10 +10,11 @@ You are helping run a directory of local AI computers.
 
 ## Photos
 - Licensed stills only: Commons PD / CC0 / CC BY / CC BY-SA, or a manufacturer press kit that explicitly allows editorial use on a third-party site.
-- If there is no quoteable license: visible text **Photo coming soon**. Never a gray hole. Never store shots (Amazon / Newegg / etc). Never hotlink. Never unlabeled AI chassis.
+- Older-model stills are allowed when Risk Guardian APPROVEs the license. Caption them as the previous generation, e.g. "Pictured: 2024 M4 Mac mini (previous generation)".
+- If there is no approved still: no photo. Leave the media slot out entirely. No placeholder text, no gray box, no empty frame. Never store shots (Amazon / Newegg / etc). Never hotlink. Never unlabeled AI chassis.
 - Publisher ships the file and the caption. The human does not chase press kits or drop binaries.
 - Caption shape: product, what you see, Photo: Name / license. Link the credit and the license when applicable.
-- Weekly chain: Research hunts Wednesdays → Risk Guardian authenticity → Publisher posts ONLY Risk-APPROVE’d stills. Publisher does not hunt or invent licenses. Host in-repo; caption/credit/license; merge to main through a PR. BLOCKED/missing = Photo coming soon.
+- Weekly chain: Research hunts Wednesdays → Risk Guardian authenticity → Publisher posts ONLY Risk-APPROVE’d stills. Publisher does not hunt or invent licenses. Host in-repo; caption/credit/license; merge to main through a PR. BLOCKED/missing = no photo slot.
 
 ## Daily research job
 Pull requests only. Nothing is pushed directly to `main`. Every change, even a one-line fix, goes on a branch and through a PR.

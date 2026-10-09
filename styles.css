@@ -236,19 +236,11 @@ footer.site {
 }
 .shot { margin: 8px 0 28px; max-width: min(42em, 100%); min-width: 0; }
 .shot-frame {
-  aspect-ratio: 16 / 10;
   max-width: 100%;
   min-width: 0;
-  background: linear-gradient(180deg, var(--paper), var(--bg-2));
-  border: 1px dashed var(--line);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--muted);
-  font-family: ui-monospace, Menlo, monospace;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 0;
 }
 .shot-frame img {
   width: 100%;
@@ -258,39 +250,26 @@ footer.site {
   display: block;
   object-fit: contain;
 }
-.shot-frame:has(img) {
-  aspect-ratio: auto;
-  border-style: solid;
-  background: var(--paper);
-  padding: 0;
-}
 .shot img { width: 100%; max-width: 100%; height: auto; display: block; }
 .shot figcaption { margin: 8px 0 0; color: var(--muted); font-size: 13px; }
 .card {
+  position: relative;
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 1fr;
   gap: 16px;
   align-items: start;
   min-width: 0;
 }
+.card:has(> .card-media) { grid-template-columns: 120px 1fr; }
 .card-media {
   position: relative;
   aspect-ratio: 1;
   max-width: 100%;
   min-width: 0;
   overflow: hidden;
-  background: linear-gradient(180deg, var(--paper), var(--bg-2));
-  border: 1px dashed var(--line);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--muted);
-  font-family: ui-monospace, Menlo, monospace;
-  font-size: 10px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 8px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 0;
 }
 .card-media img {
   position: absolute;
@@ -300,11 +279,6 @@ footer.site {
   max-width: 100%;
   object-fit: cover;
   display: block;
-}
-.card-media:has(img) {
-  padding: 0;
-  border-style: solid;
-  background: var(--paper);
 }
 .card-clip-icon {
   position: absolute;
@@ -327,6 +301,8 @@ footer.site {
   border-width: 5px 0 5px 8px;
   border-color: transparent transparent transparent var(--accent);
 }
+.card > .card-clip-icon { top: 18px; right: 18px; bottom: auto; }
+.card:has(> .card-clip-icon) .card-body { padding-right: 32px; }
 .card-body { min-width: 0; }
 .card.featured { border-color: var(--accent); }
 .pin {
@@ -350,7 +326,7 @@ footer.site {
 .buyfrom p:last-child { margin: 0; }
 @media (max-width: 640px) {
   .wrap { padding: 20px 16px 64px; }
-  .card { grid-template-columns: 1fr; }
+  .card, .card:has(> .card-media) { grid-template-columns: 1fr; }
   .card-media { aspect-ratio: 16 / 9; width: 100%; }
   .hubs { grid-template-columns: 1fr; }
 }
