@@ -1,7 +1,5 @@
 # Queue
 
-**HOLD (2026-10-13, Darrell via Homer):** No item in this queue ships until Homer lifts this hold. Only Local Boxes Publisher (LBP) ships, and only through a pull request. Nothing pushes to main.
-
 ## Next
 - 1. GMKtec EVO-T2 (`gmktec-evo-t2`) — Shipping. $2,399.99; $2,599.99 with AI SSD. The site's first Intel box. Source: https://www.gmktec.com/products/intel-core-ultra-x7-358h-x9-388h-evo-t2-ai-mini-pc
 - 2. Tenstorrent TT-QuietBox 2 (`tenstorrent-tt-quietbox-2`) — $9,999. Ships in 2 weeks. Source: https://tenstorrent.com/en/hardware/tt-quietbox
