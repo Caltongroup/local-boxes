@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GMKtec EVO-T2 — Local Boxes</title>
+  <meta name="description" content="What the GMKtec EVO-T2 is, who it is for, what it actually runs locally, and the honest catch.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="/">Local Boxes</a> <small>/ boxes</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Oct 2026</div>
+      </div>
+      <nav class="site">
+        <a class="here" href="/">Boxes</a>
+        <a href="/hubs/">Hubs</a>
+        <a href="/compare/">Compare</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+    <p class="kicker">Intel Panther Lake mini · shipping</p>
+    <h1>GMKtec EVO-T2</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">Core Ultra X7 358H with 64GB soldered LPDDR5X-8533, Arc B390, dual 10GbE + 2.5GbE and OCuLink. The site’s first Intel box. Half the memory and half the bus of a 128GB Halo cube.</p>
+    <dl class="stats">
+      <div><dt>Street price (USD)</dt><dd>$2,399.99–$2,599.99</dd></div>
+      <div><dt>Memory</dt><dd>64GB LPDDR5X-8533 (onboard)</dd></div>
+      <div><dt>Bandwidth</dt><dd>~136 GB/s theoretical (not published by GMKtec)</dd></div>
+      <div><dt>Chip</dt><dd>Intel Core Ultra X7 358H</dd></div>
+      <div><dt>Power</dt><dd>35 / 45 / 54W modes, 60W peak; 19V 7.8A DC in</dd></div>
+      <div><dt>Catch</dt><dd>64GB ceiling; soldered; not CUDA</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>GMKtec’s Panther Lake mini. Intel Core Ultra X7 358H on Intel 18A: 16 cores / 16 threads (4 P-cores to 4.8 GHz, 8 E-cores to 3.5 GHz, 4 low-power E-cores to 3.3 GHz), 18MB cache. Arc B390 iGPU with 12 Xe-cores at up to 2.5 GHz, rated 122 TOPS INT8, plus an NPU rated up to 50 TOPS. 64GB onboard LPDDR5X-8533. Two M.2 2280 slots (one PCIe 5.0 ×4, one PCIe 4.0 ×1). Windows 11 Pro preinstalled; GMKtec lists Ubuntu / Linux support. Chassis is 154 × 151 × 73.6 mm, about 2.3 kg, vapor chamber plus dual fans.</p>
+      <h2>Who it is for</h2>
+      <p>People who want a quiet, shipping x86 desk box for 8B–32B-class local models, OpenVINO / Intel stacks, and fast networking, at about a third of the ticket of this line’s 192GB <a href="/boxes/gmktec-evo-x5-pro">EVO-X5 Pro</a>. Wrong if you need 70B at a usable speed, CUDA, or more than 64GB ever: the memory is soldered and there is one SKU.</p>
+      <h2>What it actually runs</h2>
+      <ul>
+        <li>Comfortable: 8B–14B, and quantized 24B–32B dense, on the Arc iGPU or CPU with room left for context.</li>
+        <li>Possible: a quantized 70B fits in 64GB, but at ~136 GB/s theoretical it is a slow read, not a daily driver. MoE models with small active parameters fare better than dense 70B.</li>
+        <li>Not the win: anything over ~50GB of weights, training, CUDA-only stacks, or matching the 128GB <a href="/boxes/gmktec-evo-x2">EVO-X2</a> / <a href="/boxes/nvidia-dgx-spark">Spark</a> class on capacity.</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Price snapshot 26 Oct 2026, GMKtec US store: 64GB + 1TB PCIe 4.0 SSD $2,399.99; 64GB + 853GB Phison aiDAPTIV+ AI SSD (PCIe 5.0) $2,599.99. Both listed in stock. The page carries a “price increase coming soon” banner.</li>
+        <li>Only the Ultra X7 358H is sold on the page today, although the product title also names the X9 388H.</li>
+        <li>Bandwidth: Intel ARK lists two memory channels; at the 8533 MT/s GMKtec ships, a 128-bit LPDDR5X bus works out to ~136 GB/s theoretical. GMKtec publishes no figure. That is roughly half the ~256 GB/s of the Strix Halo cubes, and decode speed follows bandwidth.</li>
+        <li>The AI SSD is Phison aiDAPTIV+ (768GB + 85GB). GMKtec’s “up to 40x faster local LLM performance” is vendor copy, not something we measured; it is not extra memory bandwidth.</li>
+        <li>Rear: OCuLink (PCIe 4.0 ×4, no hot swap) for an eGPU, 10G + 2.5G RJ45, HDMI 2.1, DP 1.4, USB4. Front: a second USB4 (both USB4 ports accept 100W PD input), 2× USB 3.2 Gen2, USB 2.0, audio. Wi-Fi 7 and Bluetooth 5.4.</li>
+        <li>Intel rates the 358H at 25W base, 80W max turbo; GMKtec runs it at 35 / 45 / 54W modes with a 60W peak.</li>
+        <li>One-year warranty and a 7-day return window on the GMKtec store.</li>
+      </ul>
+      <h2>Honest verdict</h2>
+      <p class="verdict">Buy the EVO-T2 if you want a shipping Intel mini with 64GB, dual 10GbE + 2.5GbE and an OCuLink escape hatch, and 8B–32B models are the job. Skip the $200 AI SSD unless you have a workload for aiDAPTIV+. If 70B is the job, the 128GB <a href="/boxes/gmktec-evo-x2">EVO-X2</a> or <a href="/boxes/framework-desktop">Framework Desktop</a> has twice the memory and roughly twice the bandwidth. If you need CUDA, shop <a href="/boxes/nvidia-dgx-spark">Spark</a>.</p>
+    </div>
+    <p class="note" style="margin-top:28px;">Prices and stock move. Affiliate links stay off until this directory has real traffic.</p>
+    <aside class="buyfrom">
+      <p class="kicker">People buy this from</p>
+      <p><a href="https://www.gmktec.com/products/intel-core-ultra-x7-358h-x9-388h-evo-t2-ai-mini-pc" rel="noopener">GMKtec</a>. Normal link. No tracking. Not a quote, not our cart.</p>
+      <p>Affiliate outreach stays off until traffic is real.</p>
+    </aside>
+        <footer class="site">
+      <p>Curated directory, not a review mill. Prices move with memory markets. Affiliate outreach stays off until traffic is real. Published by Calton Group, LLC.</p>
+      <p><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a> · <a href="/disclaimer">Disclaimer</a></p>
+    </footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f01515428ba48fc8ddf98b3ab3e5bcc"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
