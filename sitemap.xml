@@ -44,4 +44,10 @@
   <url><loc>https://localboxes.org/boxes/minisforum-n5-max</loc></url>
   <url><loc>https://localboxes.org/boxes/nvidia-dgx-spark</loc></url>
   <url><loc>https://localboxes.org/boxes/used-rtx-5090-sff-workstation</loc></url>
+  <url><loc>https://localboxes.org/dev-boards/</loc></url>
+  <url><loc>https://localboxes.org/dev-boards/raspberry-pi-5</loc></url>
+  <url><loc>https://localboxes.org/dev-boards/orange-pi-5-max</loc></url>
+  <url><loc>https://localboxes.org/dev-boards/esp32-s3-devkitc-1-n16r8</loc></url>
+  <url><loc>https://localboxes.org/dev-boards/arduino-uno-q</loc></url>
+  <url><loc>https://localboxes.org/dev-boards/heltec-wifi-lora-32-v3</loc></url>
 </urlset>

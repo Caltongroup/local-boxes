@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Espressif ESP32-S3-DevKitC-1-N16R8 — Local Boxes</title>
+  <meta name="description" content="What the Espressif ESP32-S3-DevKitC-1-N16R8 is, where it fits in a local-AI or hardware build, and the honest catch. Specs from the maker's own pages.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="/">Local Boxes</a> <small>/ dev boards</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Oct 2026</div>
+      </div>
+      <nav class="site">
+        <a href="/">Boxes</a>
+        <a href="/hubs/">Hubs</a>
+        <a href="/compare/">Compare</a>
+        <a class="here" href="/dev-boards/">Dev Boards</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+    <p class="kicker">Microcontroller dev kit · Espressif ESP32-S3</p>
+    <h1>Espressif ESP32-S3-DevKitC-1-N16R8</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">Espressif’s own ESP32-S3 dev board with the WROOM-1-N16R8 module: 16MB flash, 8MB PSRAM, Wi-Fi and Bluetooth LE, breadboard pins. A sensor and voice front end, not a computer.</p>
+    <dl class="stats">
+      <div><dt>Chip</dt><dd>ESP32-S3, dual-core Xtensa LX7, up to 240MHz</dd></div>
+      <div><dt>Module</dt><dd>ESP32-S3-WROOM-1-N16R8</dd></div>
+      <div><dt>Flash / PSRAM</dt><dd>16MB Quad SPI / 8MB Octal SPI</dd></div>
+      <div><dt>SRAM</dt><dd>512KB</dd></div>
+      <div><dt>Radio</dt><dd>2.4GHz Wi-Fi 802.11b/g/n, Bluetooth 5 LE</dd></div>
+      <div><dt>Catch</dt><dd>Microcontroller: no Linux, no LLMs</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>Espressif’s entry-level ESP32-S3 development board. This variant carries the ESP32-S3-WROOM-1-N16R8 module: 16MB Quad SPI flash and 8MB Octal SPI PSRAM. The ESP32-S3 is a dual-core Xtensa LX7 MCU up to 240MHz with 512KB SRAM, 2.4GHz Wi-Fi (802.11b/g/n) and Bluetooth 5 LE, and Espressif says it accelerates neural-network and signal-processing workloads. The board breaks most GPIO out to headers, has a USB-to-UART port and a native USB OTG port (flashing, serial and JTAG), Boot and Reset buttons, and an addressable RGB LED.</p>
+      <h2>Who it is for</h2>
+      <p>Makers who need cheap, low-power Wi-Fi nodes: sensors, buttons, relays, LED controllers, a microphone or camera front end. Pick the 16MB flash version when firmware, OTA slots, audio assets or small on-device models need room. Wrong if you need Linux, a desktop, or anything that runs a language model.</p>
+      <h2>Where it fits in a local-AI or hardware build</h2>
+      <ul>
+        <li>As the sensor or voice satellite: it captures audio, buttons or sensor data and sends it over Wi-Fi to a Pi or a local-AI box that does the heavy inference.</li>
+        <li>As on-device TinyML: the S3’s neural-network acceleration and 8MB PSRAM suit small keyword, gesture or sensor models. These are kilobyte-to-megabyte models, not LLMs. (Our read, not a benchmark.)</li>
+        <li>As the hardware hand of an agent: an agent on a bigger machine calls a simple HTTP or MQTT endpoint on the board to flip a relay or read a sensor.</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Two USB ports: one through a USB-to-UART bridge (up to 3 Mbps), one native USB OTG (USB 1.1) that also handles JTAG debugging.</li>
+        <li>On boards with Octal PSRAM, such as this N16R8, GPIO35, GPIO36 and GPIO37 are used internally and are not available for your circuit.</li>
+        <li>The v1.1 board drives the RGB LED from GPIO38; the original v1.0 used GPIO48. Both are on the market.</li>
+        <li>Power from either USB port, the 5V pin or the 3V3 pin (mutually exclusive).</li>
+        <li>A 1U version (DevKitC-1U-N16R8) swaps the PCB antenna for an external antenna connector.</li>
+      </ul>
+      <h2>Which model we picked</h2>
+      <p>ESP32-S3-DevKitC-1-N16R8. It is Espressif’s own reference board (not a clone) with 16MB flash, as asked, plus 8MB PSRAM. Espressif’s DevKitC-1 page links this exact part number for purchase, and its module datasheet lists WROOM-1-N16R8 at 16MB Quad SPI flash and 8MB Octal SPI PSRAM. One caution: the current v1.1 user guide’s ordering table lists N8R8 and N32R16V, not N16R8. Check the part number on the listing before you buy. Sources: <a href="https://www.espressif.com/en/products/devkits/esp32-s3-devkitc-1" rel="noopener">espressif.com DevKitC-1 page</a>, <a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf" rel="noopener">WROOM-1 datasheet</a>.</p>
+      <h2>Honest verdict</h2>
+      <p class="verdict">Buy the N16R8 DevKitC-1 if you want the reference ESP32-S3 board with room to grow: 16MB flash and 8MB PSRAM cost little extra and save a rebuild later. It is the cheap edge of a build, not the brain.</p>
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://www.espressif.com/en/products/devkits/esp32-s3-devkitc-1" rel="noopener">ESP32-S3-DevKitC-1 product page (espressif.com)</a></li>
+        <li><a href="https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html" rel="noopener">ESP32-S3-DevKitC-1 v1.1 user guide (docs.espressif.com)</a></li>
+        <li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf" rel="noopener">ESP32-S3-WROOM-1 / 1U datasheet (espressif.com)</a></li>
+      </ul>
+    </div>
+    <p class="note" style="margin-top:28px;">Specs come from the maker’s own pages, checked 28 Oct 2026. No prices listed here; they move. Fit notes are our read, not benchmarks.</p>
+    <aside class="buyfrom">
+      <p class="kicker">People buy this from</p>
+      <!-- affiliate link swap-in -->
+      <p><a href="https://www.espressif.com/en/products/devkits/esp32-s3-devkitc-1" rel="noopener">Espressif (official DevKitC-1 page, links to distributors)</a>. Normal link. No tracking. Not a quote, not our cart.</p>
+    </aside>
+    <footer class="site">
+      <p>Curated directory, not a review mill. Prices move with memory markets. Affiliate outreach stays off until traffic is real. Published by Calton Group, LLC.</p>
+      <p>Some links may earn Local Boxes a commission at no cost to you.</p>
+      <p><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a> · <a href="/disclaimer">Disclaimer</a></p>
+    </footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f01515428ba48fc8ddf98b3ab3e5bcc"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

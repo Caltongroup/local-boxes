@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raspberry Pi 5 — Local Boxes</title>
+  <meta name="description" content="What the Raspberry Pi 5 is, where it fits in a local-AI or hardware build, and the honest catch. Specs from the maker's own pages.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="/">Local Boxes</a> <small>/ dev boards</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Oct 2026</div>
+      </div>
+      <nav class="site">
+        <a href="/">Boxes</a>
+        <a href="/hubs/">Hubs</a>
+        <a href="/compare/">Compare</a>
+        <a class="here" href="/dev-boards/">Dev Boards</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+    <p class="kicker">Single-board computer · Raspberry Pi</p>
+    <h1>Raspberry Pi 5</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">Broadcom BCM2712, four Cortex-A76 cores at 2.4GHz, up to 16GB LPDDR4X, a PCIe 2.0 ×1 lane for an M.2 SSD, and the standard 40-pin header. The default Linux board for anything that has to sit next to hardware all day.</p>
+    <dl class="stats">
+      <div><dt>Chip</dt><dd>Broadcom BCM2712, 4× Cortex-A76 @ 2.4GHz</dd></div>
+      <div><dt>Memory</dt><dd>1 / 2 / 4 / 8 / 16GB LPDDR4X-4267</dd></div>
+      <div><dt>Storage</dt><dd>microSD (SDR104); M.2 via PCIe 2.0 ×1 HAT</dd></div>
+      <div><dt>I/O</dt><dd>2× USB 3.0, 2× USB 2.0, GbE, 40-pin GPIO</dd></div>
+      <div><dt>Power</dt><dd>5V/5A USB-C with PD</dd></div>
+      <div><dt>Catch</dt><dd>No NPU; wants active cooling under load</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>Raspberry Pi’s current flagship board. BCM2712 quad-core 64-bit Arm Cortex-A76 at 2.4GHz with 512KB L2 per core and 2MB shared L3, VideoCore VII GPU (OpenGL ES 3.1, Vulkan 1.3), dual 4Kp60 HDMI, dual-band 802.11ac Wi-Fi and Bluetooth 5.0. I/O goes through Raspberry Pi’s own RP1 controller. Raspberry Pi says it is up to three times faster than Pi 4, adds a power button and a battery-backed real-time clock, and commits to production until at least January 2036.</p>
+      <h2>Who it is for</h2>
+      <p>Builders who want a small, well-documented Linux box with GPIO: home automation, sensor hubs, robots, kiosks, a self-hosted agent or MCP server, or the always-on “brain” that talks to a bigger local-AI box. Wrong if the plan is to run real language models on the board itself; there is no NPU or CUDA, and memory bandwidth is phone-class.</p>
+      <h2>Where it fits in a local-AI or hardware build</h2>
+      <ul>
+        <li>As the glue: a 24/7 Linux host on the LAN that runs scripts, Home Assistant-style automation, or an agent loop, and sends inference requests to a real local box such as a <a href="/boxes/framework-desktop">Framework Desktop</a> or <a href="/boxes/nvidia-dgx-spark">DGX Spark</a>.</li>
+        <li>As the hardware edge: the 40-pin header, two 4-lane MIPI camera/display connectors and the PCIe lane let it read sensors and cameras, then hand data to a model somewhere else.</li>
+        <li>On-board models: the 16GB board can hold small quantized models on CPU, but expect it to be slow. Treat it as a toy or a fallback, not a daily driver. (Our read, not a benchmark.)</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>16GB is the top RAM option; 1GB to 8GB also ship.</li>
+        <li>PCIe 2.0 ×1 needs a separate M.2 HAT or adapter. Gigabit Ethernet supports PoE+ with a separate HAT.</li>
+        <li>2× USB 3.0 run at 5Gbps simultaneously.</li>
+        <li>Raspberry Pi recommends a 5V 5A supply (its 27W USB-C unit); Pi 4 supplies may underpower it.</li>
+        <li>Raspberry Pi says it performs best with active cooling, and it will not fit a Pi 4 case.</li>
+        <li>Runs Raspberry Pi OS Trixie (current) and Bookworm (legacy); older releases do not support it.</li>
+      </ul>
+      <h2>Which model we picked</h2>
+      <p>Raspberry Pi 5, the current flagship of the numbered line. It has the newest Raspberry Pi silicon (BCM2712 plus RP1), the only Pi with a PCIe lane, RAM up to 16GB, and a stated production life to January 2036. Source: <a href="https://www.raspberrypi.com/products/raspberry-pi-5/" rel="noopener">raspberrypi.com/products/raspberry-pi-5</a>.</p>
+      <h2>Honest verdict</h2>
+      <p class="verdict">Buy the Pi 5 if you want the safest Linux board for hardware projects and an always-on helper next to your local-AI box. Get 8GB or 16GB if it will run containers or an agent stack. Do not buy it to run LLMs; pair it with a box from the directory instead.</p>
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://www.raspberrypi.com/products/raspberry-pi-5/" rel="noopener">Raspberry Pi 5 product page and specification (raspberrypi.com)</a></li>
+      </ul>
+    </div>
+    <p class="note" style="margin-top:28px;">Specs come from the maker’s own pages, checked 28 Oct 2026. No prices listed here; they move. Fit notes are our read, not benchmarks.</p>
+    <aside class="buyfrom">
+      <p class="kicker">People buy this from</p>
+      <!-- affiliate link swap-in -->
+      <p><a href="https://www.raspberrypi.com/products/raspberry-pi-5/" rel="noopener">Raspberry Pi (official product page, links to approved resellers)</a>. Normal link. No tracking. Not a quote, not our cart.</p>
+    </aside>
+    <footer class="site">
+      <p>Curated directory, not a review mill. Prices move with memory markets. Affiliate outreach stays off until traffic is real. Published by Calton Group, LLC.</p>
+      <p>Some links may earn Local Boxes a commission at no cost to you.</p>
+      <p><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a> · <a href="/disclaimer">Disclaimer</a></p>
+    </footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f01515428ba48fc8ddf98b3ab3e5bcc"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
