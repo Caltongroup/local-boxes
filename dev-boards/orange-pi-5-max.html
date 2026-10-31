@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orange Pi 5 Max — Local Boxes</title>
+  <meta name="description" content="What the Orange Pi 5 Max is, where it fits in a local-AI or hardware build, and the honest catch. Specs from the maker's own pages.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="/">Local Boxes</a> <small>/ dev boards</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Oct 2026</div>
+      </div>
+      <nav class="site">
+        <a href="/">Boxes</a>
+        <a href="/hubs/">Hubs</a>
+        <a href="/compare/">Compare</a>
+        <a class="here" href="/dev-boards/">Dev Boards</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+    <p class="kicker">Single-board computer · Orange Pi 5 series</p>
+    <h1>Orange Pi 5 Max</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">Rockchip RK3588, eight cores, a 6 TOPS NPU, up to 16GB LPDDR5, PCIe 3.0 ×4 M.2 for NVMe, 2.5GbE and Wi-Fi 6E on an 89 × 57 mm board. More compute and I/O than a Pi, with a smaller software world.</p>
+    <dl class="stats">
+      <div><dt>Chip</dt><dd>Rockchip RK3588 (8nm): 4× A76 @ 2.4GHz + 4× A55 @ 1.8GHz</dd></div>
+      <div><dt>NPU</dt><dd>Up to 6 TOPS, INT4/INT8/INT16/FP16</dd></div>
+      <div><dt>Memory</dt><dd>4 / 8 / 16GB LPDDR5</dd></div>
+      <div><dt>Storage</dt><dd>eMMC socket, microSD, M.2 M-key NVMe (PCIe 3.0 ×4)</dd></div>
+      <div><dt>Network</dt><dd>2.5GbE, Wi-Fi 6E + BT 5.3</dd></div>
+      <div><dt>Catch</dt><dd>NPU needs vendor tooling; smaller community than Pi</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>The top of the Orange Pi 5 series. Rockchip RK3588 on an 8nm process: four Cortex-A76 at 2.4GHz and four Cortex-A55 at 1.8GHz, Mali-G610 GPU (OpenGL ES 3.2, OpenCL 2.2, Vulkan 1.2), and an embedded NPU Orange Pi rates at up to 6 TOPS with INT4/INT8/INT16/FP16. 4GB, 8GB or 16GB LPDDR5. Dual HDMI 2.1 up to 8K60, MIPI DSI, two 4-lane MIPI CSI camera inputs, 2.5GbE (RTL8125BG), Wi-Fi 6E and Bluetooth 5.3, 2× USB 3.0, 2× USB 2.0, and a 40-pin header with UART, PWM, I2C, SPI and CAN. 5V 5A over USB-C. PCB is 89 × 57 × 1.6 mm, 62g.</p>
+      <h2>Who it is for</h2>
+      <p>Builders who want the most compute and I/O in a credit-card-plus board: an NVMe-backed home server, a camera box with on-board vision, a NAS-ish node on 2.5GbE, or a test bed for edge NPU work. Wrong if you want the deepest tutorials and accessory ecosystem; that is the Pi.</p>
+      <h2>Where it fits in a local-AI or hardware build</h2>
+      <ul>
+        <li>As an edge vision node: two 4-lane camera inputs plus the NPU suit on-device detection or classification before anything leaves the board.</li>
+        <li>As a small local server: 16GB LPDDR5, fast NVMe over PCIe 3.0 ×4 and 2.5GbE make it a capable always-on host for an agent, a vector store, or a model router in front of a bigger box.</li>
+        <li>On-board LLMs: 16GB can hold small quantized models. Orange Pi publishes NPU TOPS, not which LLM runtimes use that NPU, so check software support for your exact model before you count on it. (Our read, not a benchmark.)</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>M.2 M-key slot runs PCIe 3.0 ×4 and takes NVMe SSDs; Orange Pi’s text also mentions SATA SSDs.</li>
+        <li>Either the eMMC socket (default) or onboard eMMC (custom), 32GB to 256GB, plus 16MB QSPI NOR and microSD.</li>
+        <li>Audio: ES8388 codec, 3.5mm jack with mic, mic in, and HDMI 2.1 eARC.</li>
+        <li>Fan and RTC battery each get a 2-pin 1.25mm socket.</li>
+        <li>Supported OS per Orange Pi: Orange Pi OS (Droid, Arch, OH), Ubuntu, Debian, Android 13.</li>
+      </ul>
+      <h2>Which model we picked</h2>
+      <p>Orange Pi 5 Max. Within the 5 series it pairs the full RK3588 with LPDDR5 up to 16GB, PCIe 3.0 ×4 NVMe, 2.5GbE and Wi-Fi 6E, and Orange Pi bills it as the upgraded, higher-performance model. Source: <a href="http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5-Max.html" rel="noopener">orangepi.org, Orange Pi 5 Max</a>.</p>
+      <h2>Honest verdict</h2>
+      <p class="verdict">Buy the 5 Max if you want RK3588 compute, a 6 TOPS NPU, real NVMe and 2.5GbE in a small board, and you are fine reading vendor docs. Get 16GB for anything model-shaped. Pick a Pi 5 instead if you value community support over raw spec.</p>
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5-Max.html" rel="noopener">Orange Pi 5 Max product page and hardware parameters (orangepi.org)</a></li>
+      </ul>
+    </div>
+    <p class="note" style="margin-top:28px;">Specs come from the maker’s own pages, checked 28 Oct 2026. No prices listed here; they move. Fit notes are our read, not benchmarks.</p>
+    <aside class="buyfrom">
+      <p class="kicker">People buy this from</p>
+      <!-- affiliate link swap-in -->
+      <p><a href="http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5-Max.html" rel="noopener">Orange Pi (official product page)</a>. Normal link. No tracking. Not a quote, not our cart.</p>
+    </aside>
+    <footer class="site">
+      <p>Curated directory, not a review mill. Prices move with memory markets. Affiliate outreach stays off until traffic is real. Published by Calton Group, LLC.</p>
+      <p>Some links may earn Local Boxes a commission at no cost to you.</p>
+      <p><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a> · <a href="/disclaimer">Disclaimer</a></p>
+    </footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f01515428ba48fc8ddf98b3ab3e5bcc"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

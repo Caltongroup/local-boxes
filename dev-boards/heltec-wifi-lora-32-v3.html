@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heltec WiFi LoRa 32 (V3) — Local Boxes</title>
+  <meta name="description" content="What the Heltec WiFi LoRa 32 (V3) is, where it fits in a local-AI or hardware build, and the honest catch. Specs from the maker's own pages.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="/">Local Boxes</a> <small>/ dev boards</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Oct 2026</div>
+      </div>
+      <nav class="site">
+        <a href="/">Boxes</a>
+        <a href="/hubs/">Hubs</a>
+        <a href="/compare/">Compare</a>
+        <a class="here" href="/dev-boards/">Dev Boards</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+    <p class="kicker">LoRa dev board · Heltec</p>
+    <h1>Heltec WiFi LoRa 32 (V3)</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">ESP32-S3 plus a Semtech SX1262 LoRa radio, a 0.96-inch OLED and a lithium battery charger on a 50 × 25 mm board. The usual starting point for Meshtastic, MeshCore and LoRaWAN builds.</p>
+    <dl class="stats">
+      <div><dt>MCU</dt><dd>ESP32-S3FN8, dual-core LX7 up to 240MHz</dd></div>
+      <div><dt>LoRa</dt><dd>SX1262; 470–510MHz or 863–928MHz</dd></div>
+      <div><dt>Radio</dt><dd>LoRa + Wi-Fi 802.11b/g/n + Bluetooth 5 LE</dd></div>
+      <div><dt>Memory</dt><dd>512KB SRAM, 8MB SiP flash, no PSRAM</dd></div>
+      <div><dt>Extras</dt><dd>0.96in 128×64 OLED, Li-ion charging, USB-C</dd></div>
+      <div><dt>Catch</dt><dd>Wi-Fi and Bluetooth not at the same time</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>Heltec’s ESP32-S3 + LoRa node, also called the Heltec V3. ESP32-S3FN8 (Xtensa LX7 dual-core up to 240MHz, 384KB ROM, 512KB SRAM, 16KB RTC SRAM, 8MB SiP flash), Semtech SX1262 LoRa transceiver, max TX power 21 ±1 dBm, receive sensitivity −134 dBm at SF12 / 125kHz. Wi-Fi 802.11b/g/n and Bluetooth 5 LE on a 2.4GHz spring antenna, an IPEX (U.FL) connector for the LoRa antenna, and a CP2102 USB-to-serial chip on USB-C. Onboard lithium battery management with USB/battery auto-switching and a 0.96-inch 128×64 OLED. 50.2 × 25.5 × 10.2 mm, −20 to 70°C.</p>
+      <h2>Who it is for</h2>
+      <p>Anyone building off-grid messaging (Meshtastic, MeshCore), long-range sensors, or a LoRaWAN node: farm, cabin, trailhead or neighborhood. Heltec recommends Arduino; PlatformIO, ESP-IDF and MicroPython also work. Wrong if you need Wi-Fi and Bluetooth running at once, or heavy on-board processing.</p>
+      <h2>Where it fits in a local-AI or hardware build</h2>
+      <ul>
+        <li>As the long-range link: sensors or mesh messages travel kilometers over LoRa to a base node, where a Pi or a local-AI box logs, summarizes or answers them. Range depends on terrain and antenna.</li>
+        <li>As a battery field node: the onboard charger and OLED make it a self-contained sensor or messenger with a small lithium cell.</li>
+        <li>On-board AI: none to speak of. With no PSRAM it is a radio and a sensor node; the model lives elsewhere. (Our read.)</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>Heltec’s FAQ says Wi-Fi and Bluetooth cannot run simultaneously because the board has no external PSRAM. Heltec points to its Wireless Bridge for that.</li>
+        <li>Order the right band: the SX1262 build is either 470–510MHz or 863–928MHz.</li>
+        <li>Never transmit LoRa without the antenna on the IPEX connector. That is general radio practice, not a Heltec-specific claim.</li>
+        <li>Optional plastic shell sold as an accessory.</li>
+        <li>Heltec now also sells a WiFi LoRa 32 V4.3; see its <a href="https://heltec.org/project/wifi-lora-32-v4/" rel="noopener">official page</a> if you want the newer revision.</li>
+      </ul>
+      <h2>Which model we picked</h2>
+      <p>WiFi LoRa 32 V3, as requested. Heltec’s V3 page lists Meshtastic, MeshCore and LoRaWAN compatibility and full specs. Heltec now also sells a V4.3, which is the newer revision, so V3 is not the latest. Sources: <a href="https://heltec.org/project/wifi-lora-32-v3/" rel="noopener">heltec.org WiFi LoRa 32 V3</a>, <a href="https://heltec.org/project/wifi-lora-32-v4/" rel="noopener">heltec.org WiFi LoRa 32 V4.3</a>.</p>
+      <h2>Honest verdict</h2>
+      <p class="verdict">Buy the V3 if you want radio, screen and battery charging in one board, with Meshtastic, MeshCore and LoRaWAN support listed by Heltec and Arduino support. Look at the V4.3 if you are buying new and want Heltec’s latest revision. Either way, it is the radio, not the brain.</p>
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://heltec.org/project/wifi-lora-32-v3/" rel="noopener">WiFi LoRa 32 (V3) product page and specifications (heltec.org)</a></li>
+        <li><a href="https://heltec.org/project/wifi-lora-32-v4/" rel="noopener">WiFi LoRa 32 (V4.3) product page (heltec.org)</a></li>
+      </ul>
+    </div>
+    <p class="note" style="margin-top:28px;">Specs come from the maker’s own pages, checked 28 Oct 2026. No prices listed here; they move. Fit notes are our read, not benchmarks.</p>
+    <aside class="buyfrom">
+      <p class="kicker">People buy this from</p>
+      <!-- affiliate link swap-in -->
+      <p><a href="https://heltec.org/project/wifi-lora-32-v3/" rel="noopener">Heltec (official product page and store)</a>. Normal link. No tracking. Not a quote, not our cart.</p>
+    </aside>
+    <footer class="site">
+      <p>Curated directory, not a review mill. Prices move with memory markets. Affiliate outreach stays off until traffic is real. Published by Calton Group, LLC.</p>
+      <p>Some links may earn Local Boxes a commission at no cost to you.</p>
+      <p><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a> · <a href="/disclaimer">Disclaimer</a></p>
+    </footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f01515428ba48fc8ddf98b3ab3e5bcc"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

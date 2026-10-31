@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dev Boards: a starter kit for vibe coding and hardware builds — Local Boxes</title>
+  <meta name="description" content="Starter kit for vibe coding and hardware builds: Raspberry Pi 5, Orange Pi 5 Max, ESP32-S3 16MB, Arduino UNO Q, Heltec LoRa V3.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="/">Local Boxes</a> <small>/ dev boards</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Oct 2026</div>
+      </div>
+      <nav class="site">
+        <a href="/">Boxes</a>
+        <a href="/hubs/">Hubs</a>
+        <a href="/compare/">Compare</a>
+        <a class="here" href="/dev-boards/">Dev Boards</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+    <p class="kicker">Dev Boards</p>
+    <h1>The starter kit for vibe coding hardware.</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">You can describe a gadget to a coding agent and have firmware in minutes. You still need boards on the desk. These five cover a Linux host, a beefier edge node, a Wi-Fi microcontroller, a Linux-plus-Arduino hybrid, and a long-range radio.</p>
+    <div class="prose">
+      <h2>How they fit with a local box</h2>
+      <p>None of these replaces a local-AI machine. The model runs on a box from the <a href="/">directory</a>. The boards are the hands, ears and radios around it. A microcontroller reads a sensor, a Linux board runs the agent loop, and both call the big box on your LAN. Specs on each page come from the maker’s own site, with sources cited. No prices; they move.</p>
+    </div>
+    <div class="grid" style="margin-top:28px;">
+      <article class="card">
+      <div class="card-body">
+        <h2><a href="/dev-boards/raspberry-pi-5">Raspberry Pi 5</a></h2>
+        <p class="who">The safe Linux board with GPIO. Up to 16GB, PCIe for NVMe.</p>
+        <dl class="stats">
+          <div><dt>Type</dt><dd>Linux SBC</dd></div>
+          <div><dt>Chip</dt><dd>BCM2712, 4× A76</dd></div>
+          <div><dt>Memory</dt><dd>Up to 16GB</dd></div>
+          <div><dt>Role</dt><dd>Always-on host</dd></div>
+        </dl>
+        <p class="verdict">Buy for the glue and the GPIO. Not for running LLMs.</p>
+      </div>
+    </article>
+      <article class="card">
+      <div class="card-body">
+        <h2><a href="/dev-boards/orange-pi-5-max">Orange Pi 5 Max</a></h2>
+        <p class="who">RK3588, 6 TOPS NPU, LPDDR5, PCIe 3.0 ×4 NVMe, 2.5GbE.</p>
+        <dl class="stats">
+          <div><dt>Type</dt><dd>Linux SBC</dd></div>
+          <div><dt>Chip</dt><dd>RK3588, 8-core</dd></div>
+          <div><dt>Memory</dt><dd>Up to 16GB</dd></div>
+          <div><dt>Role</dt><dd>Edge vision / small server</dd></div>
+        </dl>
+        <p class="verdict">Buy for spec per square inch. Expect vendor docs.</p>
+      </div>
+    </article>
+      <article class="card">
+      <div class="card-body">
+        <h2><a href="/dev-boards/esp32-s3-devkitc-1-n16r8">ESP32-S3-DevKitC-1-N16R8</a></h2>
+        <p class="who">Espressif’s reference S3 board: 16MB flash, 8MB PSRAM.</p>
+        <dl class="stats">
+          <div><dt>Type</dt><dd>Microcontroller</dd></div>
+          <div><dt>Chip</dt><dd>ESP32-S3, 240MHz</dd></div>
+          <div><dt>Memory</dt><dd>16MB flash / 8MB PSRAM</dd></div>
+          <div><dt>Role</dt><dd>Sensor / voice node</dd></div>
+        </dl>
+        <p class="verdict">Buy for cheap Wi-Fi nodes. No Linux, no LLMs.</p>
+      </div>
+    </article>
+      <article class="card">
+      <div class="card-body">
+        <h2><a href="/dev-boards/arduino-uno-q">Arduino UNO Q (4GB)</a></h2>
+        <p class="who">Debian on a Qualcomm MPU plus a real-time STM32, UNO footprint.</p>
+        <dl class="stats">
+          <div><dt>Type</dt><dd>Linux + MCU</dd></div>
+          <div><dt>Chip</dt><dd>QRB2210 + STM32U585</dd></div>
+          <div><dt>Memory</dt><dd>4GB / 32GB eMMC</dd></div>
+          <div><dt>Role</dt><dd>Edge-AI gadget</dd></div>
+        </dl>
+        <p class="verdict">Buy for shields and Linux on one board. Not a fast SBC.</p>
+      </div>
+    </article>
+      <article class="card">
+      <div class="card-body">
+        <h2><a href="/dev-boards/heltec-wifi-lora-32-v3">Heltec WiFi LoRa 32 (V3)</a></h2>
+        <p class="who">ESP32-S3 + SX1262 LoRa, OLED, battery charger.</p>
+        <dl class="stats">
+          <div><dt>Type</dt><dd>LoRa node</dd></div>
+          <div><dt>Chip</dt><dd>ESP32-S3 + SX1262</dd></div>
+          <div><dt>Memory</dt><dd>8MB flash, no PSRAM</dd></div>
+          <div><dt>Role</dt><dd>Long-range link</dd></div>
+        </dl>
+        <p class="verdict">Buy for Meshtastic and LoRaWAN. It is the radio, not the brain.</p>
+      </div>
+    </article>
+    </div>
+    <div class="prose">
+      <h2>A sane first kit</h2>
+      <ul>
+        <li>One Linux board (Pi 5 or Orange Pi 5 Max) as the always-on helper.</li>
+        <li>Two or three ESP32-S3 boards for sensors, buttons and relays.</li>
+        <li>An UNO Q if you live in Arduino shields and want Linux on the same board.</li>
+        <li>A pair of Heltec LoRa boards if anything has to talk beyond Wi-Fi range. LoRa nodes need a partner to talk to.</li>
+      </ul>
+    </div>
+    <footer class="site">
+      <p>Curated directory, not a review mill. Prices move with memory markets. Affiliate outreach stays off until traffic is real. Published by Calton Group, LLC.</p>
+      <p>Some links may earn Local Boxes a commission at no cost to you.</p>
+      <p><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a> · <a href="/disclaimer">Disclaimer</a></p>
+    </footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f01515428ba48fc8ddf98b3ab3e5bcc"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

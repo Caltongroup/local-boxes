@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arduino UNO Q (4GB) — Local Boxes</title>
+  <meta name="description" content="What the Arduino UNO Q (4GB) is, where it fits in a local-AI or hardware build, and the honest catch. Specs from the maker's own pages.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div>
+        <div class="mark"><a href="/">Local Boxes</a> <small>/ dev boards</small></div>
+        <div class="mark" style="color:var(--muted)">Updated Oct 2026</div>
+      </div>
+      <nav class="site">
+        <a href="/">Boxes</a>
+        <a href="/hubs/">Hubs</a>
+        <a href="/compare/">Compare</a>
+        <a class="here" href="/dev-boards/">Dev Boards</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+    <p class="kicker">Hybrid dev board · Arduino</p>
+    <h1>Arduino UNO Q (4GB)</h1>
+    <p class="lede" style="color:var(--muted);font-size:18px;max-width:38em;">Two brains on an UNO-sized board: a Qualcomm Dragonwing QRB2210 running Debian Linux, and an STM32U585 microcontroller running Arduino sketches on Zephyr. One board for the AI app and the real-time pins.</p>
+    <dl class="stats">
+      <div><dt>MPU</dt><dd>Qualcomm Dragonwing QRB2210, 4× Cortex-A53 @ 2.0GHz</dd></div>
+      <div><dt>MCU</dt><dd>STM32U585, Cortex-M33 up to 160MHz</dd></div>
+      <div><dt>Memory / storage</dt><dd>4GB LPDDR4 / 32GB eMMC (2GB / 16GB variant too)</dd></div>
+      <div><dt>Radio</dt><dd>Wi-Fi 5 dual-band, Bluetooth 5.1</dd></div>
+      <div><dt>Power</dt><dd>USB-C 5V 3A, or VIN 7–24V</dd></div>
+      <div><dt>Catch</dt><dd>One USB-C port; A53-class CPU</dd></div>
+    </dl>
+    <div class="prose">
+      <h2>What it is</h2>
+      <p>Arduino’s Linux-plus-microcontroller board in the classic UNO footprint (68.85 × 53.34 mm). The Qualcomm Dragonwing QRB2210 (quad-core Cortex-A53 at 2.0GHz, Adreno GPU, dual ISP) runs a full Debian Linux with upstream support. An STM32U585 (Cortex-M33 up to 160MHz, 2MB flash, 786KB SRAM) runs Arduino sketches on Zephyr for deterministic I/O. A built-in RPC library, Arduino Bridge, links the two. Arduino App Lab ties Python apps, sketches and AI models into one workflow, and Docker and Docker Compose are supported on the Linux side.</p>
+      <h2>Who it is for</h2>
+      <p>Arduino users who have outgrown a plain microcontroller and want Linux, Python and a camera on the same board as their shields. It also suits teachers and anyone prototyping an edge-AI gadget that has to drive motors or read sensors in real time. Wrong if you want a desktop-class SBC; Arduino recommends the 4GB variant for standalone desktop use.</p>
+      <h2>Where it fits in a local-AI or hardware build</h2>
+      <ul>
+        <li>As a self-contained edge-AI gadget: Linux side runs Python and the vision or audio model through App Lab; the MCU side runs motors, LEDs and sensors with real-time timing.</li>
+        <li>As a front end to a bigger box: the Linux side can call a local model on a directory box over Wi-Fi while the MCU keeps the hardware loop tight.</li>
+        <li>Arduino’s store page pitches deploying pre-trained models to the Qualcomm AI engine from App Lab. That is vision- and sound-class work, not LLM chat. (Our read, not a benchmark.)</li>
+      </ul>
+      <h2>Standout details</h2>
+      <ul>
+        <li>The single USB-C port handles host/device role switching, power role switching and video out. With a powered USB-C dongle it drives HDMI, keyboard, mouse, camera, Ethernet and storage.</li>
+        <li>Keeps UNO headers for stacking shields; adds a Qwiic connector and bottom high-speed connectors for carriers with MIPI-CSI cameras, MIPI-DSI displays and audio.</li>
+        <li>An 8×13 blue LED matrix, 4 RGB user LEDs and a user button on board.</li>
+        <li>Interfaces include I2C/I3C, SPI, PWM, CAN, UART, PSSI, GPIO, JTAG and ADC.</li>
+        <li>Program the MCU alone from Arduino IDE 2.0+, or both sides from Arduino App Lab (Windows 10+, macOS 11+, Ubuntu 22.04+ or Debian Trixie).</li>
+      </ul>
+      <h2>Which model we picked</h2>
+      <p>Arduino UNO Q, 4GB RAM / 32GB eMMC variant. It is the larger of the two UNO Q SKUs, and Arduino recommends the 4GB variant for single-board-computer use. The 2GB / 16GB version is the same board with less memory. Sources: <a href="https://docs.arduino.cc/hardware/uno-q/" rel="noopener">docs.arduino.cc UNO Q</a>, <a href="https://store.arduino.cc/products/uno-q-4gb" rel="noopener">Arduino Store, UNO Q 4GB</a>.</p>
+      <h2>Honest verdict</h2>
+      <p class="verdict">Buy the UNO Q 4GB if you want Arduino’s shield world and a Linux AI app on one board without wiring a Pi to an UNO. Buy the 2GB if it is a single-purpose node. Skip it if you need a fast general-purpose Linux machine; a Pi 5 or Orange Pi 5 Max has far more CPU.</p>
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://docs.arduino.cc/hardware/uno-q/" rel="noopener">UNO Q hardware page (docs.arduino.cc)</a></li>
+        <li><a href="https://store.arduino.cc/products/uno-q-4gb" rel="noopener">UNO Q 4GB tech specs (store.arduino.cc)</a></li>
+        <li><a href="https://store.arduino.cc/products/uno-q" rel="noopener">UNO Q 2GB tech specs (store.arduino.cc)</a></li>
+      </ul>
+    </div>
+    <p class="note" style="margin-top:28px;">Specs come from the maker’s own pages, checked 28 Oct 2026. No prices listed here; they move. Fit notes are our read, not benchmarks.</p>
+    <aside class="buyfrom">
+      <p class="kicker">People buy this from</p>
+      <!-- affiliate link swap-in -->
+      <p><a href="https://store.arduino.cc/products/uno-q-4gb" rel="noopener">Arduino Official Store</a>. Normal link. No tracking. Not a quote, not our cart.</p>
+    </aside>
+    <footer class="site">
+      <p>Curated directory, not a review mill. Prices move with memory markets. Affiliate outreach stays off until traffic is real. Published by Calton Group, LLC.</p>
+      <p>Some links may earn Local Boxes a commission at no cost to you.</p>
+      <p><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a> · <a href="/disclaimer">Disclaimer</a></p>
+    </footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f01515428ba48fc8ddf98b3ab3e5bcc"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
