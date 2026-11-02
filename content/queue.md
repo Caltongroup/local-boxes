@@ -4,6 +4,12 @@
 - 1. Tenstorrent TT-QuietBox 2 (`tenstorrent-tt-quietbox-2`) — $9,999. Ships in 2 weeks. Source: https://tenstorrent.com/en/hardware/tt-quietbox
 - 2. Seeed reComputer Super J4012 (`seeed-recomputer-super-j4012`) — Store shows $1,449; other fields read $1,486.99–$1,502.99. PRICE MUST BE CONFIRMED AT SHIP TIME. Source: https://www.seeedstudio.com/reComputer-Super-J4012-p-6443.html
 - 3. Compare: NVIDIA DGX Spark vs GMKtec EVO-X5 Pro (`nvidia-dgx-spark-vs-gmktec-evo-x5-pro`) — Ship after `gmktec-evo-x5-pro` is live.
+- 4. iBUYPOWER Pro AMD AI Halo Mini PC (`ibuypower-pro-amd-ai-halo-mini-pc`) — Ryzen AI Max+ PRO 495, 128GB LPDDR5X-8000, dual 10GbE. $3,999 (128GB / 1TB), out of stock, as listed 2026-11-02. RECHECK PRICE AT SHIP. Source: https://www.ibuypower.com/store/ibuypower-pro-amd-ai-halo-mini-pc
+- 5. Raspberry Pi AI HAT+ 2 (`raspberry-pi-ai-hat-plus-2`) — Hailo-10H, 40 TOPS INT4, 8GB on board. $200, Pi 5 sold separately, as listed 2026-11-02. Goes in the Dev Boards section. Recheck price at ship. Source: https://www.raspberrypi.com/products/ai-hat-plus-2/
+- 6. NIMO Mini 395 2L (`nimo-mini-395-2l`) — 2L Strix Halo, 128GB. $3,779.99 on sale (regular $4,199.99), pre-order, restock expected 11/16, as listed 2026-11-02. RECHECK PRICE AT SHIP. Source: https://www.nimopc.com/products/nimo-ai-mini-pc-amd-ryzen-ai-max-395-128gb-ram
+- 7. Radxa Orion O6N (`radxa-orion-o6n`) — Cix P1, up to 45 TOPS. $649 at Arace, duties extra, as listed 2026-11-02. CONFIRM RAM CONFIG BEFORE SHIPPING; recheck price at ship. Spec: https://radxa.com/products/orion/o6/ Store: https://arace.tech/products/radxa-orion-o6n
+- 8. Compare: iBUYPOWER Pro AMD AI Halo vs AMD Ryzen AI Halo (`ibuypower-pro-amd-ai-halo-vs-amd-ryzen-ai-halo`) — Ship after #4 (`ibuypower-pro-amd-ai-halo-mini-pc`) is live.
+- 9. Compare: Raspberry Pi AI HAT+ 2 vs Jetson Orin Nano Super (`raspberry-pi-ai-hat-plus-2-vs-jetson-orin-nano-super`) — Ship after #5 (`raspberry-pi-ai-hat-plus-2`) is live.
 
 ## Updates (not new pages)
 - Minisforum MS-S1 MAX (`minisforum-ms-s1-max`) — add the 192GB P495 variant: $7,399 US, 192GB / 2TB, pre-order, ships mid-October. Source: https://store.minisforum.com/products/minisforum-ms-s1-max-p495-ai-workstation
